@@ -311,7 +311,7 @@
             Seiten zu navigieren – was insbesondere in Kombination mit Markdown-Content-Negotiation von großem Nutzen ist.
 		</p>
 		<p>
-			<br />Nichts davon ist neu. Doch die meisten Websites verfügen über eine <code class="inline-code">robots.txt</code>
+			<br />Nichts davon ist neu. Doch die meisten Websites verfügen über eine <code class="inline-code">robots.txt</code>, 
 			die für das Jahr 2015 verfasst wurde – und nicht für Agents. Die Aktualisierung dieser drei 
             Dateien stellt den Ausgangspunkt mit der größten Wirkung und dem geringsten Aufwand dar.<br />
 		</p>
@@ -350,7 +350,7 @@
             nachdem sie diese gefunden haben.
 		</p>
 		<p>
-			<br /><strong>KI-Bot Regeln</strong> — Anweisungen in der <code class="inline-code">robots.txt</code> die 
+			<br /><strong>KI-Bot Regeln</strong> — Anweisungen in der <code class="inline-code">robots.txt</code>, die 
             über die Crawling-Berechtigungen hinausgehen und die Nutzungsabsicht festlegen. Sie können einem Agenten erlauben,
             Ihre Dokumente zu crawlen, ihm aber gleichzeitig die Verwendung dieser Inhalte für das Training untersagen. Die
 			<code class="inline-code">robots.txt</code>Spezifikation unterstützt diese Unterscheidung nicht optimal,

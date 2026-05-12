@@ -176,7 +176,7 @@
                 <time datetime="2020-07-10" class="text-muted-foreground font-menu text-xs uppercase">Apr 05, 2020</time>
                 <div class="flex flex-col flex-start max-w-sm gap-6">
                     <p class="title text-xl lg:text-3xl line-clamp-4 tracking-tighter">{m.manifest_3_headline()}</p>
-                    <p class="text-sm text-muted-foreground line-clamp-3">Here's what you need to know about the future of web technologies.</p>
+                    <p class="text-sm text-muted-foreground line-clamp-3">{m.manifest_3_subline()}</p>
                 </div>
             </a>
             <div class="h-325 max-h-full w-full absolute inset-x-0 bottom-0 -z-50 invisible" aria-hidden="true"></div>

@@ -41,8 +41,8 @@
 				Websites & Web Apps
 				<a
 					class="absolute inset-0"
-					href="/engineering/websites-and-apps"
-					aria-label="Websites and Apps"
+					href="/engineering/websites-and-webapps"
+					aria-label="Websites and Web Apps"
 				></a>
 				<ChevronRight
 					strokeWidth={2}

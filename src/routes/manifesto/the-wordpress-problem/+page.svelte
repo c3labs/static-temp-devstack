@@ -92,8 +92,7 @@
 		<p>
 			WordPress markets itself as a “complete” website solution, but the base installation is surprisingly bare. To achieve basic 
 			business website functionality, you need to write your own custom code. But many WordPress providers can’t actually write code, 
-			so they rely on pre-written plugins to provide the functionality they need. That’s why sometimes if you ask for a particular 
-			feature you find its not possible, or not possible to get the full specific requirements you want.
+			so they rely on pre-written plugins to provide the functionality they need.
 		</p>
 		<p>Every plugin you install is a potential entry point. The average WordPress installation runs 20 to 30 plugins. The math is not complicated.</p>
 		<p>You might need plugins for:</p>
@@ -137,10 +136,10 @@
 		<h2>What to do if you have a WordPress website</h2>
 		<p>Best thing to do is to retire it ASAP! Of course we would say that but the fact is in most cases its usually good advice.<br />In the meantime you can:</p>
 		<ul>
-			<li>Audit your current WordPress security and security costs, you’re probably paying a monthly for security - does this mean you are secure?</li>
+			<li>Audit your current WordPress security and security costs, you’re probably paying a monthly fee for security | updates - does this mean you are secure?</li>
 			<li>Evaluate your website’s actual functionality needs - are these being met? Or are you making do with what plugins can provide?</li>
-			<li>Explore modern alternatives to WordPress - there are modern Headless-CMS platforms out there</li>
-			<li>Request a security assessment of your current WordPress installation</li>
+			<li>Explore modern alternatives to WordPress - there are modern Open-Source Headless-CMS platforms out there.  Ask us for help.</li>
+			<li>Request a security assessment of your current WordPress installation. Ask us for help.</li>
 			<li>Calculate the potential ROI of switching to a static solution - clue: it’s a no brainer!</li>
 			<li>Get in touch with c3labs for a custom website design and build!</li>
 		</ul>
@@ -186,8 +185,7 @@
 			WordPress vermarktet sich als „komplette“ Website-Lösung, doch die Basisinstallation ist überraschend spartanisch. 
 			Um grundlegende Funktionen für eine Unternehmenswebsite zu realisieren, muss man eigenen Code schreiben. 
 			Viele WordPress-Anbieter können jedoch nicht programmieren und greifen daher auf vorgefertigte Plugins zurück, 
-			um die benötigten Funktionen bereitzustellen. Deshalb kann es vorkommen, dass bestimmte Anforderungen nicht oder 
-			nicht vollständig umgesetzt werden können.
+			um die benötigten Funktionen bereitzustellen.
 		</p>
 		<p>Jedes installierte Plugin stellt einen potenziellen Angriffsvektor dar. Eine durchschnittliche WordPress-Installation nutzt 20 bis 30 Plugins - Die Rechnung ist einfach.</p>
 		<p>Möglicherweise benötigen Sie Plugins für:</p>
@@ -232,10 +230,10 @@
 		<h2>Was tun, wenn Sie eine WordPress-Website haben</h2>
 		<p>Am besten wäre es, sie so schnell wie möglich außer Betrieb zu setzen! **War zu erwarten, dass wir das sagen, aber Tatsache ist, dass es in den meisten Fällen ein guter Rat ist.**<br />In der Zwischenzeit sollten Sie folgendes tun:</p>
 		<ul>
-			<li>Überprüfen Sie Ihre aktuelle WordPress-Sicherheit und die damit verbundenen Kosten. Wahrscheinlich zahlen Sie monatlich für Sicherheit – bedeutet das, dass Sie wirklich sicher sind?</li>
+			<li>Überprüfen Sie Ihre aktuelle WordPress-Sicherheit und die damit verbundenen Kosten. Wahrscheinlich zahlen Sie monatlich für Sicherheit | Updates – bedeutet das, dass Sie wirklich sicher sind?</li>
 			<li>Prüfen Sie welche funktionalen Anforderungen an Ihre Website tatsächlich gestellt werden – werden diese erfüllt? Oder begnügen Sie sich mit dem, was Ihre Plugins bieten können?</li>
-			<li>Entdecken Sie moderne Alternativen zu WordPress – es gibt bessere Headless-CMS-Plattformen.</li>
-			<li>Lassen Sie ein Sicherheits-Assessment Ihrer aktuellen WordPress-Installation erstellen.</li>
+			<li>Entdecken Sie moderne Alternativen zu WordPress – es gibt eine vielzahl an Open-Source Headless-CMS-Plattformen. Wir beraten Sie gern.</li>
+			<li>Lassen Sie ein Sicherheits-Assessment Ihrer aktuellen WordPress-Installation erstellen.  Wir helfen Ihnen gern.</li>
 			<li>Kalkulieren Sie den potenziellen ROI eines Wechsels zu einer statischen Lösung – Tipp: It’s a no brainer!</li>
 			<li>Kontaktieren Sie uns für die Gestaltung und Entwicklung einer Website basierend auf modernsten Technologien!</li>
 		</ul>
