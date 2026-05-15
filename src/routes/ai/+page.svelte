@@ -132,7 +132,7 @@
                 <p>Ihre Marke ist heute Ihr wichtigstes SEO-Asset. Eine anerkannte, vertrauenswürdige und konsistent kommunizierte Marke ist wichtiger denn je, da KI-Assistenten und Google bekannte und maßgebliche Quellen bevorzugen.</p>
                 <p>Im Jahr 2026 sind Markenaufbau und Suchmaschinenoptimierung untrennbar miteinander verbunden. Erfolgreich sind diejenigen Unternehmen, die Markenautorität aufbauen und gleichzeitig ihre Website für die Suche optimieren. So entsteht ein positiver Kreislauf: Jede Markenerwähnung verbessert das Suchmaschinenranking, und jedes bessere Ranking steigert die Markenbekanntheit.</p>
                 <h2 id="{m.ai_p7_headline().toLowerCase().replaceAll(" ", "-")}" class="anchor">Was bleibt zu tun?</h2>
-                <p>Jede KI-Suchmaschine (von ChatGPT über Perplexity bis hin zum Google KI-Modus) ist etwas anders, aber die Herangehensweisen bleiben gleich. Neben einer klaren SEO Strategie ist auch eine Überprüfung und gegebenefalls Anpassung der technischen Grundlagen erforderlich, um die KI-Zugänglichkeit zu gewährleisten. Genauere technische Hintergründe finden Sie in unserem <a class="accent-link-animation" href="/manifesto">Manifest</a>.</p>
+                <p>Jede KI-Suchmaschine (von ChatGPT über Perplexity bis hin zum Google KI-Modus) ist etwas anders, aber die Herangehensweisen bleiben gleich. Neben einer klaren SEO Strategie ist auch eine Überprüfung und gegebenenfalls Anpassung der technischen Grundlagen erforderlich, um die KI-Zugänglichkeit zu gewährleisten. Genauere technische Hintergründe finden Sie in unserem <a class="accent-link-animation" href="/manifesto">Manifest</a>.</p>
                 {/if}
             </div>
         </article>

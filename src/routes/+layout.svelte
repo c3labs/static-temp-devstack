@@ -1,5 +1,7 @@
 <script lang="ts">
+	// @ts-ignore
 	import '@fontsource/anta';
+	// @ts-ignore
 	import '@fontsource/space-mono';
 	// import '@fontsource-variable/dm-sans/wght.css';
 	import '@fontsource-variable/dm-sans/opsz.css';

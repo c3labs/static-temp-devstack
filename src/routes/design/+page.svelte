@@ -213,7 +213,7 @@
 <section data-animate="true" class="section">
 	<header class="grid-global has-[+_*]:border-b">
 		<div class="max-lg:hidden"></div>
-		<h3	class="title col-span-1 p-5 text-5xl text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+		<h3	class="title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
 			{m.design_mediums_headline()}
 		</h3>
 	</header>

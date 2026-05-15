@@ -3,6 +3,23 @@
 	import Booking from '$lib/components/Booking.svelte';
 	import { m } from '$lib/paraglide/messages';
 	import { Blocks, ChevronRight } from 'lucide-svelte';
+	import Angular from '$lib/assets/images/logo/partner/Angular.svelte';
+	import Sanity from '$lib/assets/images/logo/partner/Sanity.svelte';
+	import Vercel from '$lib/assets/images/logo/partner/Vercel.svelte';
+	import Strapi from '$lib/assets/images/logo/partner/Strapi.svelte';
+	import Stripe from '$lib/assets/images/logo/partner/Stripe.svelte';
+	import Svelte from '$lib/assets/images/logo/partner/Svelte.svelte';
+	import Astro from '$lib/assets/images/logo/partner/Astro.svelte';
+	import Github from '$lib/assets/images/logo/partner/Github.svelte';
+	import Coolify from '$lib/assets/images/logo/partner/Coolify.svelte';
+	import Nodejs from '$lib/assets/images/logo/partner/Nodejs.svelte';
+	import Tailwindcss from '$lib/assets/images/logo/partner/Tailwindcss.svelte';
+	import Builderio from '$lib/assets/images/logo/partner/Builderio.svelte';
+	import Vuejs from '$lib/assets/images/logo/partner/Vuejs.svelte';
+	import Prismic from '$lib/assets/images/logo/partner/Prismic.svelte';
+	import Auth0 from '$lib/assets/images/logo/partner/Auth0.svelte';
+	import Openai from '$lib/assets/images/logo/partner/Openai.svelte';
+	import Anthropic from '$lib/assets/images/logo/partner/Anthropic.svelte';
 </script>
 
 <header data-animate="true" class="hero text-hero relative">
@@ -31,24 +48,12 @@
 			<li class="title group relative flex items-center justify-between border-t p-5 text-sm">
 				Artificial Intelligence
 				<a class="absolute inset-0" href="/ai" aria-label="Artificial Intelligence"></a>
-				<ChevronRight
-					strokeWidth={2}
-					size={16}
-					class="text-muted-foreground transition-colors duration-150 group-hover:text-foreground"
-				/>
+				<ChevronRight strokeWidth={2} size={16} class="text-muted-foreground transition-colors duration-150 group-hover:text-foreground" />
 			</li>
 			<li class="title group relative flex items-center justify-between border-t p-5 text-sm">
 				Websites & Web Apps
-				<a
-					class="absolute inset-0"
-					href="/engineering/websites-and-webapps"
-					aria-label="Websites and Web Apps"
-				></a>
-				<ChevronRight
-					strokeWidth={2}
-					size={16}
-					class="text-muted-foreground transition-colors duration-150 group-hover:text-foreground"
-				/>
+				<a class="absolute inset-0" href="/engineering/websites-and-webapps" aria-label="Websites and Web Apps"></a>
+				<ChevronRight strokeWidth={2} size={16} class="text-muted-foreground transition-colors duration-150 group-hover:text-foreground" />
 			</li>
 			<li class="title group relative flex items-center justify-between border-t p-5 text-sm">
 				eCommerce
@@ -63,10 +68,10 @@
 				Backend
 			</li>
 			<li class="title group relative flex items-center justify-between border-t p-5 text-sm">
-				Ai optimized SEO
+				Ai SEO Optimization
 			</li>
 			<li class="title group relative flex items-center justify-between border-t p-5 text-sm">
-				*Performance Testing - Lighthouse*
+				Performance Testing
 			</li>
 		</ul>
 	</div>
@@ -97,183 +102,75 @@
 		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">Technologies</h2>
 	</div>
 	<div class="grid grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-cols-4 text-muted-foreground">
-		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/vercel">
-            <img
-				alt="Vercel"
-				loading="lazy"
-				width="200"
-				height="60"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/43bbd014ea430e6745b21aba51c3b64918e4446d-200x60.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/43bbd014ea430e6745b21aba51c3b64918e4446d-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/43bbd014ea430e6745b21aba51c3b64918e4446d-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Service Partner</span>
+		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/prismic">
+			<Prismic class="h-fit w-36 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5"
-			href="/technology/sanity"
-			><img
-				alt="Sanity"
-				loading="lazy"
-				width="200"
-				height="60"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/5c303fb6fd94096540141a53731ae6c899d258f4-200x60.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/5c303fb6fd94096540141a53731ae6c899d258f4-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/5c303fb6fd94096540141a53731ae6c899d258f4-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/sanity">
+			<Sanity class="h-fit w-32 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/payload">
-            <img
-				alt="Payload"
-				loading="lazy"
-				width="500"
-				height="113"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/7dd31f9cbdbbbcf1d60f1badf3ddc9e345b57b2c-500x113.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/7dd31f9cbdbbbcf1d60f1badf3ddc9e345b57b2c-500x113.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/7dd31f9cbdbbbcf1d60f1badf3ddc9e345b57b2c-500x113.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/strapi">
+            <Strapi class="h-fit w-36 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
         <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/stripe">
-            <img
-				alt="Stripe"
-				loading="lazy"
-				width="200"
-				height="60"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/6a4248bea87b5c7b5c25ac958f51948e72df0514-200x60.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/6a4248bea87b5c7b5c25ac958f51948e72df0514-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/6a4248bea87b5c7b5c25ac958f51948e72df0514-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
+			<Stripe class="h-fit w-32 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Payment Solution</span>
         </a>
         <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/svelte">
-            <img
-				alt="Svelte"
-				loading="lazy"
-				width="250"
-				height="75"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/21d2cea2acbbeaa3d10c01c4f3204300aeb7ad59-250x75.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/21d2cea2acbbeaa3d10c01c4f3204300aeb7ad59-250x75.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/21d2cea2acbbeaa3d10c01c4f3204300aeb7ad59-250x75.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
+			<Svelte class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/bigcommerce">
-            <img
-				alt="BigCommerce"
-				loading="lazy"
-				width="132"
-				height="30"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/eb8852aa2d16c2144c7ebe7df9562ff59144251f-132x30.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/eb8852aa2d16c2144c7ebe7df9562ff59144251f-132x30.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/eb8852aa2d16c2144c7ebe7df9562ff59144251f-132x30.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/astro">
+			<Astro class="h-fit w-32 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/shopify">
-            <img
-				alt="Shopify Plus"
-				loading="lazy"
-				width="500"
-				height="104"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/7b95dcdde3aa87a1f044999143f492d1d651ac4f-500x104.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/7b95dcdde3aa87a1f044999143f492d1d651ac4f-500x104.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/7b95dcdde3aa87a1f044999143f492d1d651ac4f-500x104.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
+        <!-- <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/shopify">
+			<Angular class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        </a> -->
+        <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/vuejs">
+			<Vuejs class="h-fit w-28 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        </a>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/tailwindcss">
+			<Tailwindcss class="h-fit w-40 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        </a>
+		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/vercel">
+			<Vercel class="h-fit w-36 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
+        </a>
+        <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/coolify">
+			<Coolify class="h-fit w-32 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
         </a>
         <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/github">
-            <img
-				alt="GitHub"
-				loading="lazy"
-				width="190"
-				height="54"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/9eeb0f0328b6cee24ef81d0ace8634593273db86-190x54.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/9eeb0f0328b6cee24ef81d0ace8634593273db86-190x54.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/9eeb0f0328b6cee24ef81d0ace8634593273db86-190x54.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
+			<Github class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Repository Host</span>
         </a>
-        <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/hygraph">
-            <img
-				alt="HyGraph"
-				loading="lazy"
-				width="804"
-				height="225"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/2e435f78c78bd6bf416abe7d95005f1f02947992-804x225.svg?w=828&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/2e435f78c78bd6bf416abe7d95005f1f02947992-804x225.svg?w=1920&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/2e435f78c78bd6bf416abe7d95005f1f02947992-804x225.svg?w=1920&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/><span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/nodejs">
+			<Nodejs class="h-14 w-28 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/astro"
-			><img
-				alt="Astro"
-				loading="lazy"
-				width="457"
-				height="132"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/fa2221e8b02c0cae5f31219b744785352ddaadde-457x132.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/fa2221e8b02c0cae5f31219b744785352ddaadde-457x132.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/fa2221e8b02c0cae5f31219b744785352ddaadde-457x132.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/><span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/builderio">
+			<Builderio class="h-fit w-36 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/tailwind-css">
-            <img
-				alt="Tailwind CSS"
-				loading="lazy"
-				width="500"
-				height="63"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/e3eca3ac7ad1e35d46570af63dd40a792ffaccc7-500x63.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/e3eca3ac7ad1e35d46570af63dd40a792ffaccc7-500x63.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/e3eca3ac7ad1e35d46570af63dd40a792ffaccc7-500x63.svg?w=1080&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/><span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/Auth0">
+			<Auth0 class="h-fit w-30 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-		<div class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5">
-			<img
-				alt="Builder.io"
-				loading="lazy"
-				width="312"
-				height="67"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/2401f599e2772475e10c832ce0a88ac95382a364-312x67.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/2401f599e2772475e10c832ce0a88ac95382a364-312x67.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/2401f599e2772475e10c832ce0a88ac95382a364-312x67.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/><span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
-		</div>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/openai">
+			<Openai class="h-fit w-34 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
+        </a>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/anthropic">
+			<Anthropic class="h-fit w-38 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Security Asessment</span>
+        </a>
+		
 	</div>
 </section>
 <!-- end section technology partners -->
@@ -281,7 +178,7 @@
 <section data-animate="true" class="section">
 	<header class="grid-global has-[+_*]:border-b">
 		<div class="max-lg:hidden"></div>
-		<h3	class="title col-span-1 p-5 text-5xl text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+		<h3	class="title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
 			{m.engineering_principles_headline()}
 		</h3>
 	</header>

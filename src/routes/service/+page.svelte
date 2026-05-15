@@ -1,5 +1,11 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import Anthropic from '$lib/assets/images/logo/partner/Anthropic.svelte';
+	import Github from '$lib/assets/images/logo/partner/Github.svelte';
+	import Openai from '$lib/assets/images/logo/partner/Openai.svelte';
+	import Prismic from '$lib/assets/images/logo/partner/Prismic.svelte';
+	import Sanity from '$lib/assets/images/logo/partner/Sanity.svelte';
+	import Strapi from '$lib/assets/images/logo/partner/Strapi.svelte';
+	import Vercel from '$lib/assets/images/logo/partner/Vercel.svelte';
 	import Booking from '$lib/components/Booking.svelte';
 	import { m } from '$lib/paraglide/messages';
 	import { PackageCheck, ChevronRight } from 'lucide-svelte';
@@ -62,53 +68,83 @@
 		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">Technologies</h2>
 	</div>
 	<div class="grid grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-cols-4 text-muted-foreground">
-		<a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/stripe">
-            <img
-				alt="Stripe"
-				loading="lazy"
-				width="200"
-				height="60"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/6a4248bea87b5c7b5c25ac958f51948e72df0514-200x60.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/6a4248bea87b5c7b5c25ac958f51948e72df0514-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/6a4248bea87b5c7b5c25ac958f51948e72df0514-200x60.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Payment Solution</span>
+		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/prismic">
+			<Vercel class="h-fit w-36 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
+        </a>
+		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/prismic">
+			<Prismic class="h-fit w-36 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
+        </a>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/sanity">
+			<Sanity class="h-fit w-32 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
+        </a>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/strapi">
+            <Strapi class="h-fit w-36 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
         <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/github">
-            <img
-				alt="GitHub"
-				loading="lazy"
-				width="190"
-				height="54"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/9eeb0f0328b6cee24ef81d0ace8634593273db86-190x54.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/9eeb0f0328b6cee24ef81d0ace8634593273db86-190x54.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/9eeb0f0328b6cee24ef81d0ace8634593273db86-190x54.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/>
+			<Github class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Repository Host</span>
         </a>
-		<div class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5">
-			<img
-				alt="Builder.io"
-				loading="lazy"
-				width="312"
-				height="67"
-				decoding="async"
-				data-nimg="1"
-				class="h-fit w-36 object-contain"
-				srcset="https://cdn.sanity.io/images/zep746qw/production/2401f599e2772475e10c832ce0a88ac95382a364-312x67.svg?w=384&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/2401f599e2772475e10c832ce0a88ac95382a364-312x67.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format 2x"
-				src="https://cdn.sanity.io/images/zep746qw/production/2401f599e2772475e10c832ce0a88ac95382a364-312x67.svg?w=640&amp;q=75&amp;fit=max&amp;auto=format"
-				style="color: transparent;"
-			/><span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
-		</div>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/openai">
+			<Openai class="h-fit w-34 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
+        </a>
+        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l lg:border-r 2xl:h-87.5" href="/technology/anthropic">
+			<Anthropic class="h-fit w-38 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
+        </a>
+		
 	</div>
 </section>
 <!-- end section service partners -->
+ <!-- section service areas -->
+<section data-animate="true" class="section">
+	<header class="grid-global has-[+_*]:border-b">
+		<div class="max-lg:hidden"></div>
+		<h3	class="title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+			{m.service_areas_headline()}
+		</h3>
+	</header>
+	<ol class="grid-global ordered-list">
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
+			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
+			<div class="flex-start flex w-full flex-col gap-6">
+				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.service_areas_a1_headline()}</span>
+				<div class="flex flex-col gap-6 lg:max-w-md">
+					<p class="_text-sm text-muted-foreground">
+                        {m.service_areas_a1_copy()}
+					</p>
+				</div>
+			</div>
+		</li>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
+			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
+			<div class="flex-start flex w-full flex-col gap-6">
+				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.service_areas_a2_headline()}</span>
+				<div class="flex flex-col gap-6 lg:max-w-md">
+					<p class="_text-sm text-muted-foreground">
+						{m.service_areas_a2_copy()}
+					</p>
+				</div>
+			</div>
+		</li>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
+			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
+			<div class="flex-start flex w-full flex-col gap-6">
+				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.service_areas_a3_headline()}</span>
+				<div class="flex flex-col gap-6 lg:max-w-md">
+					<p class="_text-sm text-muted-foreground">
+						{m.service_areas_a3_copy()}
+					</p>
+				</div>
+			</div>
+		</li>
+	</ol>
+</section>
+<!-- end section service areas -->
 <!-- section booking -->
 <Booking title={m.service_booking_title()} description={m.service_booking_description()} cta={m.service_booking_cta()} link={m.nav_contact()} />
 <!-- end section booking -->
