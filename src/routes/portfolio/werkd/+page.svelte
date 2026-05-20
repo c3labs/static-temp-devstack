@@ -63,12 +63,12 @@
         </a> -->
     </div>
     <div class="max-lg:order-1 h-full w-full object-cover col-span-2">
-        <enhanced:img src="/src/lib/assets/images/portfolio/werkd_ArtBoard2@2x.jpg?format=avif;webp" alt="werk_d Website Screens #1" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+        <enhanced:img src="/src/lib/assets/images/portfolio/werkd_ArtBoard2@2x.jpeg?format=avif;webp" alt="werk_d Website Screens #1" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
     </div>
 </div>
 <section class="section">
     <div class="max-lg:order-1 h-full w-full object-cover pt-10 col-span-2">
-        <enhanced:img src="/src/lib/assets/images/portfolio/werkd_ArtBoard3@2x.jpg?format=avif;webp" alt="werk_d Website Screens #2" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+        <enhanced:img src="/src/lib/assets/images/portfolio/werkd_ArtBoard3@2x.jpeg?format=avif;webp" alt="werk_d Website Screens #2" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
     </div>
      <div class="max-lg:order-2 p-5 pt-10 flex flex-col gap-10 justify-between items-start lg:col-span-1 lg:border-l">
         <div class="flex flex-col gap-5">
