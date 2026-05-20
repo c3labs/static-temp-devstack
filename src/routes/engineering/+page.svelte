@@ -183,9 +183,7 @@
 		</h3>
 	</header>
 	<ol class="grid-global ordered-list">
-		<li
-			class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0"
-		>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
 			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-6">
 				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.engineering_principles_p1_headline()}</span>
@@ -196,9 +194,7 @@
 				</div>
 			</div>
 		</li>
-		<li
-			class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0"
-		>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
 			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-6">
 				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.engineering_principles_p2_headline()}</span>
@@ -209,9 +205,7 @@
 				</div>
 			</div>
 		</li>
-		<li
-			class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0"
-		>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
 			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-6">
 				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.engineering_principles_p3_headline()}</span>
@@ -222,9 +216,7 @@
 				</div>
 			</div>
 		</li>
-		<li
-			class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0"
-		>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b lg:border-b-0 p-5 first:border-l-0 lg:min-h-104.5 _lg:border-l lg:last:border-r-0">
 			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-6">
 				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.engineering_principles_p4_headline()}</span>
@@ -235,9 +227,7 @@
 				</div>
 			</div>
 		</li>
-		<li
-			class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0"
-		>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b lg:border-b-0 p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
 			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-6">
 				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.engineering_principles_p5_headline()}</span>
@@ -248,9 +238,7 @@
 				</div>
 			</div>
 		</li>
-		<li
-			class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0"
-		>
+		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 p-5 first:border-l-0 lg:min-h-104.5 lg:border-l lg:last:border-r-0">
 			<span class="text-muted-foreground ordered-list-count font-menu text-xs" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-6">
 				<span class="title max-w-sm text-justify text-3xl tracking-tighter">{m.engineering_principles_p6_headline()}</span>
@@ -287,8 +275,10 @@
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/subway">
 			<div class="relative min-h-75 grow">
 				<enhanced:img
-					src="/src/lib/assets/images/portfolio/subway_forest@2x.png?format=avif;webp"
+					src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp"
 					alt="Subway Website in Forest"
+					loading="lazy" 
+					decoding="async"
 					class="object-cover object-center"
 					style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
 					sizes="(min-width: 1024px) 66.66667vw, 100vw"
@@ -314,6 +304,8 @@
 				<enhanced:img
 					src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp"
 					alt="werk d Website Preview"
+					loading="lazy" 
+					decoding="async"
 					class="object-cover object-center"
 					style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
 					sizes="(min-width: 1024px) 66.66667vw, 100vw"

@@ -28,16 +28,14 @@
 			<h2 class="max-w-sm">{m.home_weare()}</h2>
 		</div>
 		<div class="bottom-text hidden lg:flex lg:border-l">
-			<div class="max-w-48">
-				<a class="accent-link-animation" href="/blog/2025-rewind">{@html m.home_version()}</a>
-			</div>
+			<div class="max-w-48">{@html m.home_version()}</div>
 		</div>
 	</div>
 </header>
 <!-- section ai cta -->
 <a class="group card-hover relative section section-hero-cta" href="/ai">
 	<div class="relative h-96 lg:h-auto flex">
-		<enhanced:img src="/src/lib/assets/images/ai/ai_pioneering@2x.png?format=avif;webp" alt="AI-Brain Cell" class="absolute w-full h-full object-cover object-center group-hover:opacity-95 opacity-85 transition-opacity duration-300" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+		<enhanced:img src="/src/lib/assets/images/ai/ai_pioneering@2x.png?format=avif;webp" alt="AI-Brain Cell" loading="lazy" decoding="async" class="absolute w-full h-full object-cover object-center group-hover:opacity-95 opacity-85 transition-opacity duration-300" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 		<BrainCog strokeWidth={0.7} size={66} class="_absolute w-1/2 h-1/2 self-center translate-x-1/2" />
 	</div>
 	<div class="col-span-2 group lg:border-l lg:pt-80 pb-6 pt-40 px-5">
@@ -91,7 +89,7 @@
 	<div class="grid-global portfolio-grid">
 		<a class="card-hover flex flex-col group" target="" rel="" href="/portfolio/subway">
 			<div class="relative min-h-75 grow">
-				<enhanced:img src="/src/lib/assets/images/portfolio/subway_forest@2x.png?format=avif;webp" alt="Subway Website in Forest" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+				<enhanced:img src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp" alt="Subway Website in Forest" loading="lazy" decoding="async" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 				<div class="absolute inset-0 bg-black opacity-0 lg:opacity-10 group-hover:opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
 			</div>
 			<div class="flex items-center justify-between p-5 min-h-20">
@@ -104,7 +102,7 @@
 		</a>
 		<a class="card-hover flex flex-col group" target="" rel="" href="/portfolio/werkd">
 			<div class="relative min-h-75 grow">
-				<enhanced:img src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp" alt="werk d Website Preview" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+				<enhanced:img src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp" alt="werk d Website Preview" loading="lazy" decoding="async" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 				<div class="absolute inset-0 bg-black opacity-0 lg:opacity-10 group-hover:opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
 			</div>
 			<div class="flex items-center justify-between p-5 min-h-20">
@@ -127,7 +125,7 @@
 	</header>
 	<div class="lg:col-start-2 lg:col-span-2">
 		<a class="group relative min-h-87.5 flex flex-col justify-between overflow-hidden gap-6 p-5 border-b lg:col-span-2 lg:min-h-112.5 lg:border-l" href="/manifesto/what-isitagentready-com-actually-measures">
-			<enhanced:img src="/src/lib/assets/images/manifesto/isitagentready.v2.png?format=avif;webp" alt="Featured article cover" class="-z-10 absolute h-full w-full object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+			<enhanced:img src="/src/lib/assets/images/manifesto/isitagentready.v2.png?format=avif;webp" alt="Featured article cover" loading="lazy" decoding="async" class="-z-10 absolute h-full w-full object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 			<time datetime="2026-04-21" class="absolute text-featured font-menu text-xs uppercase">Apr 21, 2026</time>
 			<div class="flex-start flex w-full max-w-md flex-col items-start gap-6">
 				<span class="text-featured title text-4xl tracking-tighter">{m.manifest_1_headline()}</span>

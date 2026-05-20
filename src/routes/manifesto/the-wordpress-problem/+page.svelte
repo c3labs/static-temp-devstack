@@ -162,8 +162,8 @@
 		<h2>Vier Werte die Ihnen zeigen warum</h2>
 		<ul>
 			<li>Jährlich werden 4,7 Millionen WordPress-Websites gehackt – das sind rund 13.000 pro Tag, also etwa eine alle sechs Sekunden.</li>
-			<li>11.334 neue Sicherheitslücken im Jahr 2025 – ein Anstieg von 42 % im Vergleich zum Vorjahr</li>
-			<li>5 Stunden Zeitfenster, um Ihre Website vor einem Massenangriff zu patchen</li>
+			<li>11.334 neue Sicherheitslücken im Jahr 2025 – ein Anstieg von 42 % im Vergleich zum Vorjahr.</li>
+			<li>5 Stunden Zeitfenster, um Ihre Website vor einem Massenangriff zu patchen.</li>
 			<li>87,8 % der WordPress-spezifischen Sicherheitslücken umgehen Standard-Hosting-Firewalls.</li>
 		</ul>
 		<p>
@@ -225,14 +225,14 @@
 			<div class="text-xl text-foreground italic font-medium leading-relaxed text-heading">"Regular plugin updates are the second line of defence, but as attackers weaponize new vulnerabilities within mere hours, this is not a viable defence."</div>
 		</blockquote>
 		<h2>Was kostet ein WordPress-Hack tatsächlich?</h2>
-		<p>Notfall-Entwicklerzeit, Ausfallzeiten, Umsatzeinbußen und die monatelangen SEO-Arbeiten, die erforderlich sind, um eingeschleuste Spam-Links und Google-Ranking-Strafen rückgängig zu machen.</p>
+		<p>Notfall-Entwicklerzeit, Ausfallzeiten, Umsatzeinbußen und die monatelangen SEO-Arbeiten, die erforderlich sind, um eingeschleuste Spam-Links und den Verlust der Google-Ranking-Position rückgängig zu machen.</p>
 		<p><strong>Die wichtigste Zahl: Zu viel!</strong> - Ich gehe hier nicht auf die Details ein – bitte lesen Sie das <a class="accent-link-animation" rel="noreferrer noopener" target="_blank" href="https://patchstack.com/whitepaper/state-of-wordpress-security-in-2026/">patchstack whitepaper</a>. Beachten Sie die wirtschaftlichen Aspekte.</p>
 		<h2>Was tun, wenn Sie eine WordPress-Website haben</h2>
-		<p>Am besten wäre es, sie so schnell wie möglich außer Betrieb zu setzen! **War zu erwarten, dass wir das sagen, aber Tatsache ist, dass es in den meisten Fällen ein guter Rat ist.**<br />In der Zwischenzeit sollten Sie folgendes tun:</p>
+		<p>Aus unserer Sicht wäre es am besten, sie so schnell wie möglich außer Betrieb zu setzen! Es war zu erwarten, dass wir das sagen, aber Tatsache ist, dass es in den meisten Fällen ein guter Rat ist.<br />In der Zwischenzeit sollten Sie folgendes tun:</p>
 		<ul>
 			<li>Überprüfen Sie Ihre aktuelle WordPress-Sicherheit und die damit verbundenen Kosten. Wahrscheinlich zahlen Sie monatlich für Sicherheit | Updates – bedeutet das, dass Sie wirklich sicher sind?</li>
 			<li>Prüfen Sie welche funktionalen Anforderungen an Ihre Website tatsächlich gestellt werden – werden diese erfüllt? Oder begnügen Sie sich mit dem, was Ihre Plugins bieten können?</li>
-			<li>Entdecken Sie moderne Alternativen zu WordPress – es gibt eine vielzahl an Open-Source Headless-CMS-Plattformen. Wir beraten Sie gern.</li>
+			<li>Entdecken Sie moderne Alternativen zu WordPress – es gibt eine Vielzahl an Open-Source Headless-CMS-Plattformen. Wir beraten Sie gern.</li>
 			<li>Lassen Sie ein Sicherheits-Assessment Ihrer aktuellen WordPress-Installation erstellen.  Wir helfen Ihnen gern.</li>
 			<li>Kalkulieren Sie den potenziellen ROI eines Wechsels zu einer statischen Lösung – Tipp: It’s a no brainer!</li>
 			<li>Kontaktieren Sie uns für die Gestaltung und Entwicklung einer Website basierend auf modernsten Technologien!</li>
