@@ -1,4 +1,6 @@
 <script lang="ts">
+	import c3hero_hi from '$lib/assets/video/home/monogram_org.mp4';
+	import c3hero_low from '$lib/assets/video/home/monogram_org.mp4';
 	import { base } from '$app/paths';
 	import Booking from '$lib/components/Booking.svelte';
 	// import { page } from '$app/state';
@@ -14,8 +16,9 @@
 	<div class="absolute flex flex-col h-full items-center justify-center w-full">
 		<h2 in:fly={{ y :50, duration: 250, delay: 100, easing:quadOut }} out:fade class="absolute z-10 large-hero-headline text-featured w-screen max-w-full col-span-3 flex flex-wrap justify-between gap-x-16 p-3 lg:p-5 font-heroline text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl leading-[1.1] uppercase tracking-[-0.02em] text-justify font-bold">{m.home_welcome()}</h2>
 	</div>
-	<video class="absolute h-full w-full object-cover object-center" autoplay loop playsinline>
-		<source src="/src/lib/assets/video/home/monogram_org.mp4" type="video/mp4">
+	<video class="absolute h-full w-full object-cover object-center" autoplay loop playsinline muted disablepictureinpicture disableremoteplayback>
+		<source src={c3hero_hi} type="video/mp4" media="(min-width: 1200px)"/>
+		<source src={c3hero_low} type="video/mp4" media="(min-width: 300px)"/>
 		<track kind="captions">
 	</video>	
 	<!-- <video class="absolute h-full w-full object-cover object-center" src="https://rstr.in/monogram/website/aFtZoTk82YT" autoplay loop poster="https://rstr.in/monogram/website/Rx6SNYJJMRD" playsinline>

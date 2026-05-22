@@ -1,4 +1,6 @@
 <script lang="ts">
+    import subway_ipad_hi from '$lib/assets/video/portfolio/subway.ipad.mp4';
+    import subway_ipad_low from '$lib/assets/video/portfolio/subway.ipad.mp4';
 	import { base } from '$app/paths';
 	import Booking from '$lib/components/Booking.svelte';
 	import { m } from '$lib/paraglide/messages';
@@ -72,6 +74,8 @@
         <div>
             <video autoplay playsinline loop muted disablepictureinpicture disableremoteplayback class="mediapanel">
                 <source src="/src/lib/assets/video/portfolio/subway.ipad.mp4" type="video/mp4">
+                <source src={subway_ipad_hi} type="video/mp4" media="(min-width: 1200px)"/>
+                <source src={subway_ipad_low} type="video/mp4" media="(min-width: 300px)"/>
                 <track kind="captions">
             </video>
         </div>
