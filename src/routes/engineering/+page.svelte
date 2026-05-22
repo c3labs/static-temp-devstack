@@ -23,7 +23,7 @@
 </script>
 
 <header data-animate="true" class="hero text-hero relative">
-	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">Engineering</h1>
+	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">{m.nav_services_engineering()}</h1>
 	<h2
 		class="title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl"
 	>
@@ -99,7 +99,7 @@
 <!-- section technology partners -->
 <section data-animate="true" class="section section-partner-cards">
 	<div data-animate="true" class="relative max-lg:border-b max-lg:pt-10">
-		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">Technologies</h2>
+		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">{m.engineering_technologies()}</h2>
 	</div>
 	<div class="grid grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-cols-4 text-muted-foreground">
 		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/prismic">

@@ -77,7 +77,7 @@
 
 <!--  nav area -->
 <nav id="nav">
-	<div class="relative z-20 grid h-full grid-cols-4 items-stretch border-b transition-colors duration-500 lg:grid-cols-6 font-menu text-xs{page.url.pathname === '/' && !servicePanel ? ' bg-transparent' : ' bg-background'}">
+	<div class="relative z-20 grid h-full grid-cols-4 items-stretch border-b transition-colors duration-500 lg:grid-cols-6 font-menu text-xs{page.url.pathname === '/' && !(servicePanel || subnavPanel) ? ' bg-transparent' : ' bg-background'}">
 		<button class="_nav-item card-hover col-span-2 flex w-full items-center border-l-0 lg:px-2 cursor-pointer {page.url.pathname === '/' ? ' card-hover-active' : ''}" aria-label="Home" onclick={() => navigateTo('/')}>
 			{@html c3logo}
 			<span class="sr-only">c3labs logo</span>

@@ -14,7 +14,7 @@
 >
 	<ChevronLeft strokeWidth={2} size={16} />
 </button>
-<header class="hero case-study-hero">
+<header in:fade class="hero case-study-hero">
     <div class="absolute w-full h-full">
         <enhanced:img src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp" alt="Subway Website Preview" class="absolute w-full h-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
     </div>
@@ -67,18 +67,19 @@
         <enhanced:img src="/src/lib/assets/images/portfolio/subway_screens_top@2x.png?format=avif;webp" alt="Subway Website Screens #1" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
     </div>
 </div>
-<!-- <section class="section section-threes">
-    <div class="absolute w-full h-full videobox">
-        <div class="mediapanel absolute">
-            <video autoplay playsinline loop muted disablepictureinpicture disableremoteplayback>
-                <source src="https://a.storyblok.com/f/133769/x/eaf085a9d2/fluid-glass-mood-video-06-process.mp4" type="video/mp4">
+<section class="section _section-threes">
+    <div class="col-span-3 py-5 lg:py-10 mx-4">
+        <div>
+            <video autoplay playsinline loop muted disablepictureinpicture disableremoteplayback class="mediapanel">
+                <source src="/src/lib/assets/video/portfolio/subway.ipad.mp4" type="video/mp4">
+                <track kind="captions">
             </video>
         </div>
     </div>
-    <div class="max-lg:order-1 h-full w-full object-cover pt-10 col-span-3">
+    <!-- <div class="max-lg:order-1 h-full w-full object-cover pt-10 col-span-3">
         <enhanced:img src="/src/lib/assets/images/portfolio/subway_screens_mid@2x.png?format=avif;webp" alt="Subway Website in Forest" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
-    </div>
-</section> -->
+    </div> -->
+</section>
 <section class="section">
     <div class="max-lg:order-1 h-full w-full object-cover pt-10 col-span-2">
         <enhanced:img src="/src/lib/assets/images/portfolio/subway_screens_bot@2x.png?format=avif;webp" alt="Subway Website Screens #2" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
@@ -92,35 +93,12 @@
         </div>
     </div>
 </section>
-<!-- <section class="section">
-     <div class="max-lg:order-2 p-5 pt-10 flex flex-col gap-10 justify-between items-start lg:col-span-1 lg:border-l">
-        <div class="flex flex-col gap-5">
-            <h2 class="title text-4xl max-w-md tracking-tighter">A Strategic Partnership</h2>
-            <div class="max-w-md">
-                <p class="text-muted-foreground">To execute their ambitious roadmap, Abnormal AI needed to build and launch a high volume of new web pages. We provided a team of developers who partnered with them, working directly within their existing Plasmic workflow. Our team took on the task of building pages from Figma designs, collaborating with their internal experts for guidance on their technical setup and custom components. This approach directly accelerated their ability to ship new pages, while ensuring a high standard of quality in every detail.</p>
-            </div>
-        </div>
-    </div>
-    <img alt="Case study" 
-    loading="lazy"
-     width="6400" 
-     height="4400" 
-     decoding="async" 
-     data-nimg="1" 
-     class="max-lg:order-1 h-full w-full object-cover pt-10 col-span-2" 
-     sizes="100vw" 
-     srcset="https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=640&amp;q=75&amp;fit=max&amp;auto=format 640w, https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=750&amp;q=75&amp;fit=max&amp;auto=format 750w, https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=828&amp;q=75&amp;fit=max&amp;auto=format 828w, https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=1080&amp;q=75&amp;fit=max&amp;auto=format 1080w, https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=1200&amp;q=75&amp;fit=max&amp;auto=format 1200w, https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=1920&amp;q=75&amp;fit=max&amp;auto=format 1920w, https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=2048&amp;q=75&amp;fit=max&amp;auto=format 2048w" 
-     src="https://cdn.sanity.io/images/zep746qw/production/bd8e11d01451450a4209cbe61285a76d4fa179f2-6400x4400.png?w=2048&amp;q=75&amp;fit=max&amp;auto=format" 
-     >
-</section> -->
 <!-- section booking -->
 <Booking title={m.portfolio_booking_title()} description={m.portfolio_booking_description()} cta={m.portfolio_booking_cta()}  link={m.nav_contact()}/>
 <!-- end section booking -->
 <style>
 	.title {
 		text-transform: uppercase;
-		/* font-stretch: 60%; */
-		/* font-variation-settings: "wght" 450; */
 		line-height: 0.9;
 		font-family: var(--font-headline);
 	}
@@ -131,23 +109,22 @@
 		}
 	}
 
-    .videobox {
-        display: grid;
-        /* margin: 8.3333333333vw; */
-        margin-top: 8vw;
-        grid-column-gap: 2.2222222222vw;
-        grid-template-columns: repeat(12, 1fr);
-        z-index: 1;
-    }
-
     .mediapanel {
-        border-radius: 2.0833333333vw;
         overflow: hidden;
-        grid-column: 2 / 12;
-        order: 1;
-        border-width: .3472222222vw;
-        border: .4vw solid var(--color-neutral-900);
+        border-radius: 2.2vw;
+        border: .55vw solid var(--color-neutral-900);
+        width: stretch;
+        width: -webkit-fill-available;
+        max-width: 1024px;
+        margin: auto;
 
     }
+
+	@media (min-width: 1024px) {
+		.mediapanel {
+			border-radius: 22px;
+            border-width: 5px;
+		}
+	}
 </style>
 
