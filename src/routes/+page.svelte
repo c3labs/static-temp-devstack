@@ -42,7 +42,7 @@
 <!-- section ai cta -->
 <a class="group card-hover relative section section-hero-cta" href="/ai">
 	<div class="relative h-96 lg:h-auto flex">
-		<!-- <enhanced:img src="/src/lib/assets/images/ai/ai_pioneering@2x.png?format=avif;webp" alt="AI-Brain Cell" loading="lazy" decoding="async" class="absolute w-full h-full object-cover object-center group-hover:opacity-95 opacity-85 transition-opacity duration-300" sizes="(min-width: 1024px) 66.66667vw, 100vw" /> -->
+		<enhanced:img src="/src/lib/assets/images/ai/ai_pioneering@2x.png?format=avif;webp" alt="AI-Brain Cell" loading="lazy" decoding="async" class="absolute w-full h-full object-cover object-center group-hover:opacity-95 opacity-85 transition-opacity duration-300" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 		<BrainCog strokeWidth={0.7} size={66} class="_absolute w-1/2 h-1/2 self-center translate-x-1/2" />
 	</div>
 	<div class="col-span-2 group lg:border-l lg:pt-80 pb-6 pt-40 px-5">
