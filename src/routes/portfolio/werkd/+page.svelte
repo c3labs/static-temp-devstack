@@ -16,7 +16,7 @@
 </button>
 <header in:fade class="hero case-study-hero">
     <div class="absolute w-full h-full">
-        <enhanced:img src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp" alt="werk_d Website Preview" class="absolute w-full h-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+        <!-- <enhanced:img src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp" alt="werk_d Website Preview" class="absolute w-full h-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" /> -->
     </div>
 	<div class="grid-global relative z-10 max-lg:hidden">
 		<div class="col-start-2 border-l"></div>

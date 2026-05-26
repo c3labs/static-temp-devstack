@@ -22,13 +22,13 @@
 	<div class="relative lg:col-span-3">
 		<div class="grid-global relative h-75 lg:h-150">
 			<div class="relative z-10 border-[#888]/20 lg:col-start-2 lg:border-l"></div>
-			<enhanced:img
+			<!-- <enhanced:img
 				src="/src/lib/assets/images/manifesto/temporal_3.png?format=avif;webp"
 				alt="Featured article cover"
 				class="absolute -z-10 h-full w-full object-cover"
 				style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
 				sizes="(min-width: 1024px) 66.66667vw, 100vw"
-			/>
+			/> -->
 		</div>
 	</div>
 	<div class="flex flex-col gap-5 px-5 py-10 lg:col-span-2 lg:col-start-2 lg:border-l">
@@ -40,7 +40,7 @@
 		</h1>
 		<ul class="mt-6 flex flex-wrap gap-6">
 			<li class="flex items-center gap-4">
-				<enhanced:img src="/src/lib/assets/images/manifesto/me_c3labs.png?w=400" alt="Avatar: Jürgen Graf" class="rounded-sm w-7 h-8 object-cover" />
+				<!-- <enhanced:img src="/src/lib/assets/images/manifesto/me_c3labs.png?w=400" alt="Avatar: Jürgen Graf" class="rounded-sm w-7 h-8 object-cover" /> -->
 				<address class="not-italic">	
 					<div>Jürgen Graf</div>
 					<div class="font-menu text-xs text-muted-foreground">Design Engineer</div>
