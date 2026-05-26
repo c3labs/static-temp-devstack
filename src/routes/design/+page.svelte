@@ -55,7 +55,7 @@
 		</ul>
 	</div>
     <div class="h-full w-full border-t _object-cover _object-center select-none lg:col-span-2 lg:border-t-0 lg:border-l">
-        <enhanced:img src="/src/lib/assets/images/design/design_empire.jpeg?format=avif;webp" alt="design area cover" class="h-full w-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+        <!-- <enhanced:img src="/src/lib/assets/images/design/design_empire.jpeg?format=avif;webp" alt="design area cover" class="h-full w-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" /> -->
     </div>
 </section>
 <!-- section blockqoute -->
