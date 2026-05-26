@@ -59,7 +59,7 @@
     <div class="flex flex-col justify-between gap-10 p-5 lg:border-r lg:border-b lg:-mr-px">
         <div class="flex flex-col gap-5">
             <h1 class="title text-5xl 2xl:text-7xl hyphens-auto whitespace-break-spaces tracking-tighter">{m.portfolio_cases_subway_h1()}</h1>
-            <p class="text-muted-foreground">{m.portfolio_cases_subway_p1()}</p>
+            <p class="text-muted-foreground">{@html m.portfolio_cases_subway_p1()}</p>
         </div>
         <a href="https://radsportwagner.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 font-menu uppercase text-xs text-muted-foreground transition-colors duration-300 text-accent-contrast hover:text-foreground w-fit py-1">{m.portfolio_cases_website()}
             <ExternalLink strokeWidth={2} size={13} />
@@ -92,7 +92,7 @@
         <div class="flex flex-col gap-5">
             <h2 class="title text-4xl max-w-md tracking-tighter">{m.portfolio_cases_subway_h2()}</h2>
             <div class="max-w-md">
-                <p class="text-muted-foreground">{m.portfolio_cases_subway_p2()}</p>
+                <p class="text-muted-foreground">{@html m.portfolio_cases_subway_p2()}</p>
             </div>
         </div>
     </div>

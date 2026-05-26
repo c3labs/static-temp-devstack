@@ -1,6 +1,6 @@
 <script lang="ts">
-	import c3hero_hi from '$lib/assets/video/home/monogram_org.mp4';
-	import c3hero_low from '$lib/assets/video/home/monogram_org.mp4';
+	import c3hero_hi from '$lib/assets/video/home/c3.hero.mp4';
+	import c3hero_low from '$lib/assets/video/home/c3.hero.mobile.mp4';
 	import { base } from '$app/paths';
 	import Booking from '$lib/components/Booking.svelte';
 	// import { page } from '$app/state';
@@ -17,7 +17,7 @@
 		<h2 in:fly={{ y :50, duration: 250, delay: 100, easing:quadOut }} out:fade class="absolute z-10 large-hero-headline text-featured w-screen max-w-full col-span-3 flex flex-wrap justify-between gap-x-16 p-3 lg:p-5 font-heroline text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl leading-[1.1] uppercase tracking-[-0.02em] text-justify font-bold">{m.home_welcome()}</h2>
 	</div>
 	<video class="absolute h-full w-full object-cover object-center" autoplay loop playsinline muted disablepictureinpicture disableremoteplayback>
-		<source src={c3hero_hi} type="video/mp4" media="(min-width: 1200px)"/>
+		<source src={c3hero_hi} type="video/mp4" media="(min-width: 900px)"/>
 		<source src={c3hero_low} type="video/mp4" media="(min-width: 300px)"/>
 		<track kind="captions">
 	</video>	

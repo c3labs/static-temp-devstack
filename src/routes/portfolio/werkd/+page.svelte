@@ -74,7 +74,7 @@
         <div class="flex flex-col gap-5">
             <h2 class="title text-4xl max-w-md tracking-tighter">{m.portfolio_cases_werkd_h2()}</h2>
             <div class="max-w-md">
-                <p class="text-muted-foreground">{m.portfolio_cases_werkd_p2()}</p>
+                <p class="text-muted-foreground">{@html m.portfolio_cases_werkd_p2()}</p>
             </div>
         </div>
     </div>
