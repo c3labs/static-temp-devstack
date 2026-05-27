@@ -24,9 +24,7 @@
 
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">{m.nav_services_engineering()}</h1>
-	<h2
-		class="title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl"
-	>
+	<h2 class="title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
 		{m.engineering_headline()}
 	</h2>
 	<div class="flex items-end p-5 pt-10">
@@ -413,7 +411,6 @@
 	cta={m.engineering_booking_cta()}
 	link={m.nav_contact()}
 />
-
 <!-- end section booking -->
 <style>
 	.title {

@@ -14,7 +14,7 @@
 	"home_services_design_subline": "Elevate your digital experience and delight every user. It all starts here.",
 	"home_services_engineering_subline": "Make zero compromises when implementing your vision, using a powerful tech stack.",
 	"home_services_service_subline": "Your deadline is our deadline. <br>Your success is our success.",
-	"home_version": "v.06-preview<br>(C) 2026 c3labs",
+	"home_version": "v.07-preview<br>(C) 2026 c3labs",
 	"home_weare": "Digital agency | Aichach, building beautiful websites and digital experiences",
 	"home_back": "< Back to home",
 	"home_booking_title": "Start your Project",
@@ -148,6 +148,9 @@
 	"engineering_booking_title": "Start your Project",
 	"engineering_booking_description": "Claim a time to meet. We will help you do the rest.",
 	"engineering_booking_cta": "Book an appointment now",
+
+	"engineering_services_websites_h1": "So, you need a website?",
+	"engineering_services_websites_h2": "Ok! You need it fast, right? Obviously it should be cheap also, shure! There is a solution! But it’s clearly not wordpress - that‘s a problem!",
 
 	"service_headline": "Next-Level Service",
 	"service_principles": "Principles",
