@@ -78,12 +78,12 @@
 	<div
 		class="_object-cover _object-center h-full w-full border-t select-none lg:col-span-2 lg:border-t-0 lg:border-l"
 	>
-		<!-- <enhanced:img
+		<enhanced:img
 			src="/src/lib/assets/images/service/engineering.jpeg?format=avif;webp"
 			alt="engineering area cover"
 			class="h-full w-full object-cover object-center"
 			sizes="(min-width: 1024px) 66.66667vw, 100vw"
-		/> -->
+		/>
 	</div>
 </section>
 <!-- section blockqoute -->
@@ -274,15 +274,15 @@
 	<div class="grid-global portfolio-grid">
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/subway">
 			<div class="relative min-h-75 grow">
-				<!-- <enhanced:img
+				<enhanced:img
 					src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp"
-					alt="Subway Website in Forest"
+					alt="Subway Website Preview"
 					loading="lazy" 
 					decoding="async"
 					class="object-cover object-center"
 					style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
 					sizes="(min-width: 1024px) 66.66667vw, 100vw"
-				/> -->
+				/>
 				<div
 					class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-0 lg:opacity-10"
 					aria-hidden="true"
@@ -301,7 +301,7 @@
 		</a>
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/werkd">
 			<div class="relative min-h-75 grow">
-				<!-- <enhanced:img
+				<enhanced:img
 					src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp"
 					alt="werk d Website Preview"
 					loading="lazy" 
@@ -309,7 +309,7 @@
 					class="object-cover object-center"
 					style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
 					sizes="(min-width: 1024px) 66.66667vw, 100vw"
-				/> -->
+				/>
 				<div
 					class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-0 lg:opacity-10"
 					aria-hidden="true"
