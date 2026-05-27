@@ -40,7 +40,8 @@ html.dark {
 	/* --app-background: oklch(0.1938 0.0026 219.61); */
 	--app-foreground: #f1f1f1;
 	--app-muted: #292a2b;
-	--app-muted-foreground: #5f6364;
+	/* --app-muted-foreground: #5f6364; */
+	--app-muted-foreground: #707373;
 	--app-border: #616B6F4f;
 	--app-card: #202425;
 	--app-primary: #f1f5f9;
