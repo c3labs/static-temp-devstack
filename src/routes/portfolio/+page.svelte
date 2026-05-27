@@ -15,7 +15,7 @@
 	<div class="grid-global portfolio-grid">
 		<a class="card-hover flex flex-col group" target="" rel="" href="/portfolio/subway">
 			<div class="relative min-h-75 grow">
-				<!-- <enhanced:img src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp" alt="Subway Website in Forest" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" /> -->
+				<enhanced:img src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp" alt="Subway Website in Forest" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 				<div class="absolute inset-0 bg-black opacity-0 lg:opacity-10 group-hover:opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
 			</div>
 			<div class="flex items-center justify-between p-5 min-h-20">
@@ -28,7 +28,7 @@
 		</a>
 		<a class="card-hover flex flex-col group" target="" rel="" href="/portfolio/werkd">
 			<div class="relative min-h-75 grow">
-				<!-- <enhanced:img src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp" alt="werk d Website Preview" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" /> -->
+				<enhanced:img src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp" alt="werk d Website Preview" class="object-cover object-center" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
 				<div class="absolute inset-0 bg-black opacity-0 lg:opacity-10 group-hover:opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
 			</div>
 			<div class="flex items-center justify-between p-5 min-h-20">
