@@ -25,7 +25,7 @@
 		<div class="grid-global relative h-75 lg:h-150">
 			<div class="relative z-10 border-[#888]/20 lg:col-start-2 lg:border-l"></div>
 			<enhanced:img
-				src="/src/lib/assets/images/manifesto/temporal_1.png?format=avif;webp"
+				src="/src/lib/assets/images/manifesto/temporal_1.png?format=avif"
 				alt="Featured article cover"
 				class="absolute -z-10 h-full w-full object-cover"
 				style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"

@@ -75,7 +75,7 @@
 	</div>
 	<div class="_object-cover _object-center h-full w-full border-t select-none lg:col-span-2 lg:border-t-0 lg:border-l">
 		<enhanced:img
-			src="/src/lib/assets/images/service/engineering.jpeg?format=avif;webp"
+			src="/src/lib/assets/images/service/engineering.jpeg?format=avif"
 			alt="engineering area cover"
 			class="h-full w-full object-cover object-center"
 			sizes="(min-width: 1024px) 66.66667vw, 100vw"
@@ -271,7 +271,7 @@
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/subway">
 			<div class="relative min-h-75 grow">
 				<enhanced:img
-					src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif;webp"
+					src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif"
 					alt="Subway Website Preview"
 					loading="lazy" 
 					decoding="async"
@@ -298,7 +298,7 @@
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/werkd">
 			<div class="relative min-h-75 grow">
 				<enhanced:img
-					src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif;webp"
+					src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif"
 					alt="werk d Website Preview"
 					loading="lazy" 
 					decoding="async"

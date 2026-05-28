@@ -65,7 +65,7 @@
     </aside>
     <section data-animate="true" class="relative flex flex-col lg:col-start-2 lg:col-span-2 lg:grid lg:grid-cols-2">
         <div class="_object-cover _object-center h-full w-full border-t select-none lg:col-span-2 lg:border-t-0 lg:border-l">
-            <enhanced:img src="/src/lib/assets/images/ai/ai_pioneering@2x.png?format=avif;webp" alt="design area cover" class="h-full w-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+            <enhanced:img src="/src/lib/assets/images/ai/ai_pioneering@2x.png?format=avif" alt="design area cover" class="h-full w-full object-cover object-center" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
         </div>
         <article data-animate="true" class="section section-blog-content">
             <div class="rich-text px-5 py-10 _lg:col-start-2 lg:border-l">

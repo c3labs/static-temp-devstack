@@ -88,7 +88,7 @@
     </aside>
     <section data-animate="true" class="relative flex flex-col lg:col-start-2 lg:col-span-2 lg:grid lg:grid-cols-2">
         <a class="group relative min-h-87.5 flex flex-col justify-between overflow-hidden gap-6 p-5 border-b lg:col-span-2 lg:min-h-112.5 lg:border-l" href="/manifesto/what-isitagentready-com-actually-measures">
-            <enhanced:img src="/src/lib/assets/images/manifesto/isitagentready.v2.png?format=avif;webp" alt="Featured article cover" class="-z-10 absolute h-full w-full object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+            <enhanced:img src="/src/lib/assets/images/manifesto/isitagentready.v2.png?format=avif" alt="Featured article cover" class="-z-10 absolute h-full w-full object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
             <time datetime="2026-04-20" class="absolute text-featured font-menu text-xs uppercase">Apr 21, 2026</time>
             <div class="flex-start flex w-full max-w-md flex-col items-start gap-6">
                 <span class="text-featured title text-4xl tracking-tighter">{m.manifest_1_headline()}</span>
@@ -115,7 +115,7 @@
             </div>
             <a title="llms.txt: Helping AI Understand Your Website" class="relative grid grid-cols-2 border-b lg:h-3/4 card-hover -mb-px overflow-hidden" href="/manifesto/llms-txt-helping-ai-understand-your-website">
                 <div class="relative">
-                    <enhanced:img src="/src/lib/assets/images/manifesto/temporal_3.png?format=avif;webp" alt="Featured article cover" class="-z-10 absolute h-full w-full object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
+                    <enhanced:img src="/src/lib/assets/images/manifesto/temporal_3.png?format=avif" alt="Featured article cover" class="-z-10 absolute h-full w-full object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(min-width: 1024px) 66.66667vw, 100vw" />
                 </div>
                 <div class="flex flex-col items-start justify-between gap-5 p-5">
                     <time datetime="2025-07-24" class="text-muted-foreground font-menu text-xs uppercase">Dec 12, 2025</time>

@@ -49,6 +49,7 @@
 		"@fontsource/nova-mono": "^5.2.8",
 		"@fontsource/space-mono": "^5.2.9",
 		"@sveltejs/enhanced-img": "^0.6.1",
+		"gsap": "^3.15.0",
 		"lucide-svelte": "^1.0.1"
 	}
 }
