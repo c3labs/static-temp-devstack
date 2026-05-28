@@ -20,11 +20,48 @@
 	import Auth0 from '$lib/assets/images/logo/partner/Auth0.svelte';
 	import Openai from '$lib/assets/images/logo/partner/Openai.svelte';
 	import Anthropic from '$lib/assets/images/logo/partner/Anthropic.svelte';
+
+    import gsap from 'gsap';
+	import { SplitText } from 'gsap/SplitText';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollTrigger);
+
+    let split:SplitText;
+
+	onMount(() => {
+
+		split = SplitText.create(".split", { 
+			type: "chars, words",
+			smartWrap: true,
+			autoSplit: true,
+			onSplit(self) {
+				return gsap.from(self.chars, {
+				duration: .5, 
+				// y: 100, 
+				autoAlpha: 0, 
+				stagger: {
+					amount: 1,
+					from: "random"
+				},
+				// onComplete: () => self.revert()
+				});
+  			}
+		});
+
+		return () => {
+            // remove all eventListeners and kill scrolltrigger
+		}
+
+	});
+
 </script>
 
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">{m.nav_services_engineering()}</h1>
-	<h2 class="title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
+	<h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
 		{m.engineering_headline()}
 	</h2>
 	<div class="flex items-end p-5 pt-10">

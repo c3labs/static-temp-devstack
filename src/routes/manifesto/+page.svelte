@@ -8,11 +8,47 @@
     let placeholder = $state<string>(String(m.manifest_form_placeholder()));
     let busy = $state(false);
 
+    import gsap from 'gsap';
+	import { SplitText } from 'gsap/SplitText';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollTrigger);
+
+    let split:SplitText;
+
+	onMount(() => {
+
+		split = SplitText.create(".split", { 
+			type: "chars, words",
+			smartWrap: true,
+			autoSplit: true,
+			onSplit(self) {
+				return gsap.from(self.chars, {
+				duration: .5, 
+				// y: 100, 
+				autoAlpha: 0, 
+				stagger: {
+					amount: 1,
+					from: "random"
+				},
+				// onComplete: () => self.revert()
+				});
+  			}
+		});
+
+		return () => {
+            // remove all eventListeners and kill scrolltrigger
+		}
+
+	});
+
 </script>
 <div class="grid-global">
     <header data-animate="true" class="hero text-hero relative">
         <h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">{m.manifest_title()}</h1>
-        <h2 class="title p-5 text-5xl lg:col-start-2 lg:pt-55 lg:text-6xl lg:border-l text-wrap tracking-tighter">{m.manifest_headline()}</h2>
+        <h2 class="split title p-5 text-5xl lg:col-start-2 lg:pt-55 lg:text-6xl lg:border-l text-wrap tracking-tighter">{m.manifest_headline()}</h2>
         <div class="flex items-end pt-10 p-5">
             <div class="flex flex-col gap-5"></div>
         </div>
