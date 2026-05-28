@@ -9,14 +9,51 @@
 	import { Blocks, BrainCog, ChevronRight, Command, PackageCheck } from 'lucide-svelte';
 	import { elasticOut, quadIn, quadOut } from 'svelte/easing';
 	import { fade, fly } from 'svelte/transition';
+
+    import gsap from 'gsap';
+	import { SplitText } from 'gsap/SplitText';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollTrigger);
+
+    let split:SplitText;
+    let animation:GSAPTween;
+    let myScrollTrigger:ScrollTrigger;
+
+	onMount(() => {
+
+		split = SplitText.create(".split", { 
+			type: "words, chars",
+			onSplit(self) {
+				return gsap.from(self.chars, {
+				duration: .5, 
+				// y: 100, 
+				autoAlpha: 0, 
+				stagger: {
+					amount: 3,
+					from: "random"
+				}
+				});
+  			}		
+		});
+
+		return () => {
+            // remove all eventListeners and kill scrolltrigger
+		}
+
+	});
+	
+	
 </script>
 
 <header class="hero large-hero relative">
 	<h1 class="sr-only">c3labs | Büro für mediale Kommunikation</h1>
 	<div class="absolute flex flex-col h-full items-center justify-center w-full">
-		<h2 in:fly={{ y :50, duration: 250, delay: 100, easing:quadOut }} out:fade class="absolute z-10 large-hero-headline text-featured w-screen max-w-full col-span-3 flex flex-wrap justify-between gap-x-16 p-3 lg:p-5 font-heroline text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl leading-[1.1] uppercase tracking-[-0.02em] text-justify font-bold">{m.home_welcome()}</h2>
+		<h2 in:fly={{ y :50, duration: 250, delay: 100, easing:quadOut }} out:fade class="split absolute z-10 large-hero-headline text-featured w-screen max-w-full col-span-3 flex flex-wrap justify-between gap-x-16 p-3 lg:p-5 font-heroline text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl leading-[1.1] uppercase tracking-[-0.02em] text-justify font-bold">{m.home_welcome()}</h2>
 	</div>
-	<video class="absolute h-full w-full object-cover object-center" autoplay loop playsinline muted disablepictureinpicture disableremoteplayback>
+	<video class="absolute h-full w-full object-cover object-center" autoplay loop playsinline muted disablepictureinpicture disableremoteplayback preload="metadata">
 		<source src={c3hero_hi} type="video/mp4" media="(min-width: 900px)"/>
 		<source src={c3hero_low} type="video/mp4" media="(min-width: 300px)"/>
 		<track kind="captions">
