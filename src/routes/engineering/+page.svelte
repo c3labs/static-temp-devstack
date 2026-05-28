@@ -73,9 +73,7 @@
 			</li>
 		</ul>
 	</div>
-	<div
-		class="_object-cover _object-center h-full w-full border-t select-none lg:col-span-2 lg:border-t-0 lg:border-l"
-	>
+	<div class="_object-cover _object-center h-full w-full border-t select-none lg:col-span-2 lg:border-t-0 lg:border-l">
 		<enhanced:img
 			src="/src/lib/assets/images/service/engineering.jpeg?format=avif;webp"
 			alt="engineering area cover"
