@@ -9,15 +9,63 @@
 	import Astro from '$lib/assets/images/logo/partner/Astro.svelte';
 	import Tailwindcss from '$lib/assets/images/logo/partner/Tailwindcss.svelte';
 	import Coolify from '$lib/assets/images/logo/partner/Coolify.svelte';
+
+    import gsap from 'gsap';
+	import { SplitText } from 'gsap/SplitText';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollTrigger);
+
+    let split:SplitText;
+	let triggerArray:Array<ScrollTrigger> = [];
+
+	onMount(() => {
+
+		let splitters = gsap.utils.toArray(".split") as Element[];
+		
+		splitters.forEach((splitter, i) => {
+			// console.log(splitter, i);
+			triggerArray[i] = ScrollTrigger.create({
+         		trigger: splitter,
+            	start: "top bottom-=100px",
+				// markers: true
+			});
+
+			split = SplitText.create(splitter, { 
+				type: "chars, words",
+				smartWrap: true,
+				autoSplit: true,
+				onSplit(self) {
+					return gsap.from(self.chars, {
+						duration: 0.5,
+						autoAlpha: 0, 
+						stagger: {
+							amount: 1,
+							from: "random"
+						},
+						scrollTrigger: triggerArray[i]
+					});
+				}
+			});
+		});
+
+		return () => {
+            // remove all eventListeners and kill scrolltrigger
+			triggerArray.forEach((myScrollTrigger) => {
+				myScrollTrigger.kill();
+			});
+		}
+
+	});
 </script>
 
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">
 		{m.engineering_services_websites_h1()}
 	</h1>
-	<h2
-		class="title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl"
-	>
+	<h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
 		{m.engineering_services_websites_h2()}
 	</h2>
 	<div class="flex items-end p-5 pt-10">
@@ -195,12 +243,8 @@
 		<h2 class="flex items-end p-5 pt-10 font-menu text-xs text-muted-foreground uppercase">
 			{m.engineering_portfolio_title()}
 		</h2>
-		<h3
-			class="title font-foreground col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl"
-		>
-			<span style="position:relative;display:inline-block;">
-				<span style="position: relative; display: inline;">{m.portfolio_headline()}</span>
-			</span>
+		<h3 class="split title font-foreground col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+			{m.portfolio_headline()}
 		</h3>
 		<a
 			href={base + '/portfolio'}

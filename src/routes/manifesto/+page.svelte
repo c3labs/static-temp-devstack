@@ -17,29 +17,43 @@
     gsap.registerPlugin(ScrollTrigger);
 
     let split:SplitText;
+	let triggerArray:Array<ScrollTrigger> = [];
 
 	onMount(() => {
 
-		split = SplitText.create(".split", { 
-			type: "chars, words",
-			smartWrap: true,
-			autoSplit: true,
-			onSplit(self) {
-				return gsap.from(self.chars, {
-				duration: .5, 
-				// y: 100, 
-				autoAlpha: 0, 
-				stagger: {
-					amount: 1,
-					from: "random"
-				},
-				// onComplete: () => self.revert()
-				});
-  			}
+		let splitters = gsap.utils.toArray(".split") as Element[];
+		
+		splitters.forEach((splitter, i) => {
+			// console.log(splitter, i);
+			triggerArray[i] = ScrollTrigger.create({
+         		trigger: splitter,
+            	start: "top bottom-=100px",
+				// markers: true
+			});
+
+			split = SplitText.create(splitter, { 
+				type: "chars, words",
+				smartWrap: true,
+				autoSplit: true,
+				onSplit(self) {
+					return gsap.from(self.chars, {
+						duration: 0.5,
+						autoAlpha: 0, 
+						stagger: {
+							amount: 1,
+							from: "random"
+						},
+						scrollTrigger: triggerArray[i]
+					});
+				}
+			});
 		});
 
 		return () => {
             // remove all eventListeners and kill scrolltrigger
+			triggerArray.forEach((myScrollTrigger) => {
+				myScrollTrigger.kill();
+			});
 		}
 
 	});

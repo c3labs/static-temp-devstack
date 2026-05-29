@@ -20,7 +20,7 @@
 			autoSplit: true,
 			onSplit(self) {
 				return gsap.from(self.chars, {
-				duration: .5, 
+				duration: 0.5, 
 				// y: 100, 
 				autoAlpha: 0, 
 				stagger: {

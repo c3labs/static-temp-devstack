@@ -10,13 +10,61 @@
 	import { m } from '$lib/paraglide/messages';
 	import { PackageCheck, ChevronRight } from 'lucide-svelte';
 	// import { fade } from 'svelte/transition';
+
+    import gsap from 'gsap';
+	import { SplitText } from 'gsap/SplitText';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollTrigger);
+
+    let split:SplitText;
+	let triggerArray:Array<ScrollTrigger> = [];
+
+	onMount(() => {
+
+		let splitters = gsap.utils.toArray(".split") as Element[];
+		
+		splitters.forEach((splitter, i) => {
+			// console.log(splitter, i);
+			triggerArray[i] = ScrollTrigger.create({
+         		trigger: splitter,
+            	start: "top bottom-=100px",
+				// markers: true
+			});
+
+			split = SplitText.create(splitter, { 
+				type: "chars, words",
+				smartWrap: true,
+				autoSplit: true,
+				onSplit(self) {
+					return gsap.from(self.chars, {
+						duration: 0.5,
+						autoAlpha: 0, 
+						stagger: {
+							amount: 1,
+							from: "random"
+						},
+						scrollTrigger: triggerArray[i]
+					});
+				}
+			});
+		});
+
+		return () => {
+            // remove all eventListeners and kill scrolltrigger
+			triggerArray.forEach((myScrollTrigger) => {
+				myScrollTrigger.kill();
+			});
+		}
+
+	});
 </script>
 
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">Service</h1>
-	<h2
-		class="title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl"
-	>
+	<h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
 		{m.service_headline()}
 	</h2>
 	<div class="flex items-end p-5 pt-10">
@@ -104,7 +152,7 @@
 <section data-animate="true" class="section">
 	<header class="grid-global has-[+_*]:border-b">
 		<div class="max-lg:hidden"></div>
-		<h3	class="title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+		<h3	class="split title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
 			{m.service_areas_headline()}
 		</h3>
 	</header>

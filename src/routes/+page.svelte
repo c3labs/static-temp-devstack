@@ -19,32 +19,69 @@
     gsap.registerPlugin(ScrollTrigger);
 
     let split:SplitText;
-    let animation:GSAPTween;
-    let myScrollTrigger:ScrollTrigger;
+    // let animation:GSAPTween;
+    // let myScrollTrigger:ScrollTrigger;
+	let triggerArray:Array<ScrollTrigger> = [];
+	
 
 	onMount(() => {
 
-		split = SplitText.create(".split", { 
-			type: "chars, words",
-			smartWrap: true,
-			autoSplit: true,
-			onSplit(self) {
-				return gsap.from(self.chars, {
-				duration: .5, 
-				delay: .4,
-				// y: 100, 
-				autoAlpha: 0, 
-				stagger: {
-					amount: 3,
-					from: "random"
-				},
-				// onComplete: () => self.revert()
+		let splitters = gsap.utils.toArray(".split") as Element[];
+		
+		splitters.forEach((splitter, i) => {
+			// console.log(splitter, i);
+			triggerArray[i] = ScrollTrigger.create({
+         		trigger: splitter,
+            	start: "top bottom-=100px",
+				// markers: true
+			});
+
+			if (i == 0) {
+				split = SplitText.create(splitter, { 
+					type: "chars, words",
+					smartWrap: true,
+					autoSplit: true,
+					onSplit(self) {
+						return gsap.from(self.chars, {
+							duration: 2.5, 
+							delay: 0.5,
+							// y: 100, 
+							autoAlpha: 0, 
+							stagger: {
+								amount: 0.8,
+								from: "random"
+							},
+							scrollTrigger: triggerArray[i]
+						});
+					}
 				});
-  			}
+			} else {
+				split = SplitText.create(splitter, { 
+					type: "chars, words",
+					smartWrap: true,
+					autoSplit: true,
+					onSplit(self) {
+						return gsap.from(self.chars, {
+							duration: 0.5,
+							autoAlpha: 0, 
+							stagger: {
+								amount: 1,
+								from: "random"
+							},
+							scrollTrigger: triggerArray[i]
+						});
+					}
+				});
+			};
+
+
 		});
 
 		return () => {
             // remove all eventListeners and kill scrolltrigger
+			triggerArray.forEach((myScrollTrigger) => {
+				myScrollTrigger.kill();
+			});
 		}
 
 	});
@@ -87,7 +124,7 @@
 		<BrainCog strokeWidth={0.7} size={66} class="_absolute w-1/2 h-1/2 self-center translate-x-1/2" />
 	</div>
 	<div class="col-span-2 group lg:border-l lg:pt-80 pb-6 pt-40 px-5">
-		<h2 class="title text-5xl lg:text-6xl max-w-xl _font-normal _font-medium tracking-tighter">{m.home_hero_headline()}</h2>
+		<h2 class="split title text-5xl lg:text-6xl max-w-xl _font-normal _font-medium tracking-tighter">{m.home_hero_headline()}</h2>
 		<p class="text-sm text-muted-foreground mt-6">{m.home_hero_subline()}</p>
 		<div class="absolute top-5 right-5 button bg-accent hover:bg-accent-hover text-card transition-all duration-300">
 			<ChevronRight strokeWidth={2} size={16} />
@@ -129,7 +166,7 @@
 		<h2 class="flex items-end p-5 pt-10 font-menu text-muted-foreground uppercase text-xs">{m.home_portfolio_title()}</h2>
 		<h3 class="title col-span-1 lg:col-start-2 p-5 text-5xl lg:text-6xl lg:pt-50 lg:border-l text-wrap font-foreground tracking-tighter">
 			<span style="position:relative;display:inline-block;">
-				<span style="position: relative; display: inline;">{m.home_portfolio_headline()}</span>
+				<span class="split" style="position: relative; display: inline;">{m.home_portfolio_headline()}</span>
 			</span>
 		</h3>
 		<a href="{base + '/portfolio'}" class="flex items-end p-5 pt-10 font-menu text-foreground text-xs uppercase card-hover">{m.home_portfolio_viewall()}</a>
@@ -168,7 +205,7 @@
 <section data-animate="true" class="section section-blog-cards">
 	<header class="grid-global has-[+_*]:border-b">
 		<h2 class="flex items-end p-5 pt-10 font-menu uppercase text-xs text-muted-foreground">{m.home_manifest_title()}</h2>
-		<h3 class="title col-span-1 lg:col-start-2 p-5 text-5xl lg:text-6xl lg:pt-50 lg:border-l text-wrap tracking-tighter">{m.home_manifest_headline()}</h3>
+		<h3 class="split title col-span-1 lg:col-start-2 p-5 text-5xl lg:text-6xl lg:pt-50 lg:border-l text-wrap tracking-tighter">{m.home_manifest_headline()}</h3>
 		<a class="flex items-end p-5 pt-10 font-menu uppercase text-xs text-foreground card-hover" href="/manifesto">{m.home_manifest_viewall()}</a>
 	</header>
 	<div class="lg:col-start-2 lg:col-span-2">

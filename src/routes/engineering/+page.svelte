@@ -30,29 +30,43 @@
     gsap.registerPlugin(ScrollTrigger);
 
     let split:SplitText;
+	let triggerArray:Array<ScrollTrigger> = [];
 
 	onMount(() => {
 
-		split = SplitText.create(".split", { 
-			type: "chars, words",
-			smartWrap: true,
-			autoSplit: true,
-			onSplit(self) {
-				return gsap.from(self.chars, {
-				duration: .5, 
-				// y: 100, 
-				autoAlpha: 0, 
-				stagger: {
-					amount: 1,
-					from: "random"
-				},
-				// onComplete: () => self.revert()
-				});
-  			}
+		let splitters = gsap.utils.toArray(".split") as Element[];
+		
+		splitters.forEach((splitter, i) => {
+			// console.log(splitter, i);
+			triggerArray[i] = ScrollTrigger.create({
+         		trigger: splitter,
+            	start: "top bottom-=100px",
+				// markers: true
+			});
+
+			split = SplitText.create(splitter, { 
+				type: "chars, words",
+				smartWrap: true,
+				autoSplit: true,
+				onSplit(self) {
+					return gsap.from(self.chars, {
+						duration: 0.5,
+						autoAlpha: 0, 
+						stagger: {
+							amount: 1,
+							from: "random"
+						},
+						scrollTrigger: triggerArray[i]
+					});
+				}
+			});
 		});
 
 		return () => {
             // remove all eventListeners and kill scrolltrigger
+			triggerArray.forEach((myScrollTrigger) => {
+				myScrollTrigger.kill();
+			});
 		}
 
 	});
@@ -211,7 +225,7 @@
 <section data-animate="true" class="section">
 	<header class="grid-global has-[+_*]:border-b">
 		<div class="max-lg:hidden"></div>
-		<h3	class="title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+		<h3	class="split title col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
 			{m.engineering_principles_headline()}
 		</h3>
 	</header>
@@ -291,12 +305,8 @@
 		<h2 class="flex items-end p-5 pt-10 font-menu text-xs text-muted-foreground uppercase">
 			{m.engineering_portfolio_title()}
 		</h2>
-		<h3
-			class="title font-foreground col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl"
-		>
-			<span style="position:relative;display:inline-block;">
-				<span style="position: relative; display: inline;">{m.engineering_portfolio_headline()}</span>
-			</span>
+		<h3 class="split title font-foreground col-span-1 p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+			{m.engineering_portfolio_headline()}
 		</h3>
 		<a
 			href={base + '/portfolio'}
@@ -368,9 +378,9 @@
 		<h2 class="flex items-end p-5 pt-10 font-menu text-xs text-muted-foreground uppercase">
 			STAGES
 		</h2>
-		<h3
-			class="title col-span-1 p-5 text-5xl tracking-tighter text-wrap text-foreground lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl"
-		>{m.engineering_process_headline()}</h3>
+		<h3 class="split title col-span-1 p-5 text-5xl tracking-tighter text-wrap text-foreground lg:col-start-2 lg:border-l lg:pt-50 lg:text-6xl">
+			{m.engineering_process_headline()}
+		</h3>
 	</header>
 	<ul class="col-span-3">
 		<li class="col-span-3 grid grid-cols-1 border-t first:border-t-0 lg:grid-cols-3">

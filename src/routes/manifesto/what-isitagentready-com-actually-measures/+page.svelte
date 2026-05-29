@@ -5,6 +5,57 @@
 	import { getLocale } from '$lib/paraglide/runtime';
 	import { ChevronLeft, ExternalLink } from 'lucide-svelte';
 	import { fade } from 'svelte/transition';
+
+	import gsap from 'gsap';
+	import { SplitText } from 'gsap/SplitText';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrollTrigger);
+
+    let split:SplitText;
+	let triggerArray:Array<ScrollTrigger> = [];
+
+	onMount(() => {
+
+		let splitters = gsap.utils.toArray(".split") as Element[];
+		
+		splitters.forEach((splitter, i) => {
+			// console.log(splitter, i);
+			triggerArray[i] = ScrollTrigger.create({
+         		trigger: splitter,
+            	start: "top bottom-=100px",
+				// markers: true
+			});
+
+			split = SplitText.create(splitter, { 
+				type: "chars, words",
+				smartWrap: true,
+				autoSplit: true,
+				onSplit(self) {
+					return gsap.from(self.chars, {
+						duration: 0.5,
+						autoAlpha: 0, 
+						stagger: {
+							amount: 1,
+							from: "random"
+						},
+						scrollTrigger: triggerArray[i]
+					});
+				}
+			});
+		});
+
+		return () => {
+            // remove all eventListeners and kill scrolltrigger
+			triggerArray.forEach((myScrollTrigger) => {
+				myScrollTrigger.kill();
+			});
+		}
+
+	});
+
 </script>
 
 <button
@@ -33,9 +84,7 @@
 	</div>
 	<div class="flex flex-col gap-5 px-5 py-10 lg:col-span-2 lg:col-start-2 lg:border-l">
 		<time datetime="2025-11-11" class="font-menu text-xs text-muted-foreground">Apr 21, 2026</time>
-		<h1
-			class="title text-4xl tracking-tighter text-wrap whitespace-break-spaces text-foreground lg:pr-24 lg:text-6xl"
-		>
+		<h1 class="split title text-4xl tracking-tighter text-wrap whitespace-break-spaces text-foreground lg:pr-24 lg:text-6xl">
 			{m.manifest_1_headline()}
 		</h1>
 		<ul class="mt-6 flex flex-wrap gap-6">
