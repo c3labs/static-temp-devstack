@@ -6,6 +6,8 @@
 	import Sanity from '$lib/assets/images/logo/partner/Sanity.svelte';
 	import Strapi from '$lib/assets/images/logo/partner/Strapi.svelte';
 	import Vercel from '$lib/assets/images/logo/partner/Vercel.svelte';
+	import Coolify from '$lib/assets/images/logo/partner/Coolify.svelte';
+	
 	import Booking from '$lib/components/Booking.svelte';
 	import { m } from '$lib/paraglide/messages';
 	import { PackageCheck, ChevronRight } from 'lucide-svelte';
@@ -15,7 +17,7 @@
 	import { SplitText } from 'gsap/SplitText';
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
-
+	
 	gsap.registerPlugin(SplitText);
     gsap.registerPlugin(ScrollTrigger);
 
@@ -113,42 +115,41 @@
 <!-- section service partners -->
 <section data-animate="true" class="section section-partner-cards">
 	<div data-animate="true" class="relative max-lg:border-b max-lg:pt-10">
-		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">Technologies</h2>
+		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">{m.engineering_technologies()}</h2>
 	</div>
 	<div class="grid grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-cols-4 text-muted-foreground">
-		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/prismic">
-			<Vercel class="h-fit w-36 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
-        </a>
-		<a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/prismic">
+		<a aria-label="Prismic Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://prismic.io/" target="_blank" rel="noreferrer noopener">
 			<Prismic class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/sanity">
+        <a aria-label="Sanity Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener">
 			<Sanity class="h-fit w-32 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/strapi">
+        <a aria-label="Strapi Open Source Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://strapi.io/" target="_blank" rel="noreferrer noopener">
             <Strapi class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/github">
+        <a aria-label="Coolify self-hosting with superpowers" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
+			<Coolify class="h-fit w-32 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
+        </a>
+        <a aria-label="Github Repo Host" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b lg:border-b-0 p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://github.com/" target="_blank" rel="noreferrer noopener">
 			<Github class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Repository Host</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/openai">
+        <a aria-label="OpenAI ChatCPT" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b lg:border-b-0 p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://openai.com/" target="_blank" rel="noreferrer noopener">
 			<Openai class="h-fit w-34 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
         </a>
-        <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l lg:border-r 2xl:h-87.5" href="/technology/anthropic">
+        <a aria-label="Anthropic" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center p-5 max-md:even:border-l lg:border-l border-r 2xl:h-87.5" href="https://www.anthropic.com/" target="_blank" rel="noreferrer noopener">
 			<Anthropic class="h-fit w-38 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
         </a>
-		
 	</div>
 </section>
 <!-- end section service partners -->
- <!-- section service areas -->
+<!-- section service areas -->
 <section data-animate="true" class="section">
 	<header class="grid-global has-[+_*]:border-b">
 		<div class="max-lg:hidden"></div>

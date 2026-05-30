@@ -3,7 +3,6 @@
 	import Booking from '$lib/components/Booking.svelte';
 	import { m } from '$lib/paraglide/messages';
 	import { Blocks, ChevronRight } from 'lucide-svelte';
-	import Sanity from '$lib/assets/images/logo/partner/Sanity.svelte';
 	import Strapi from '$lib/assets/images/logo/partner/Strapi.svelte';
 	import Svelte from '$lib/assets/images/logo/partner/Svelte.svelte';
 	import Astro from '$lib/assets/images/logo/partner/Astro.svelte';
@@ -14,6 +13,7 @@
 	import { SplitText } from 'gsap/SplitText';
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
+	import Bitsui from '$lib/assets/images/logo/partner/Bitsui.svelte';
 
 	gsap.registerPlugin(SplitText);
     gsap.registerPlugin(ScrollTrigger);
@@ -80,14 +80,10 @@
 		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b lg:border-b-0 p-5 lg:min-h-79.5 lg:last:border-r-0">
 			<span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-4">
-				<span class="title max-w-sm text-3xl tracking-tighter">INNOVATIVE LEADERS IN FRONTEND DEVELOPMENT SERVICES</span>
+				<span class="title max-w-sm text-3xl tracking-tighter uppercase">{m.engineering_services_websites_types_headline1()}</span>
 				<div class="flex flex-col gap-6 lg:max-w-md">
 					<p class="text-sm text-muted-foreground">
-						c3labs provides innovative frontend development services, focusing on building visually
-						appealing, fast, and scalable digital platforms. We specialize in Server-Side Rendering
-						(SSR), Static Site Generation (SSG), mobile app frontends, and legacy frontend
-						modernization. Our solutions help your website or app stand out while delivering top
-						performance across devices and browsers.
+						{m.engineering_services_websites_types_copy1()}
 					</p>
 				</div>
 			</div>
@@ -95,14 +91,10 @@
 		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 _border-b lg:border-b-0 p-5 lg:min-h-79.5 lg:border-l lg:last:border-r-0">
 			<span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
 			<div class="flex-start flex w-full flex-col gap-4">
-				<span class="title max-w-sm text-3xl tracking-tighter">CUSTOM FRONTEND WEB DEVELOPMENT SERVICES</span>
+				<span class="title max-w-sm text-3xl tracking-tighter">{m.engineering_services_websites_types_headline2()}</span>
 				<div class="flex flex-col gap-6 lg:max-w-md">
 					<p class="text-sm text-muted-foreground">
-						From conceptualization to design to UI development and cross-browser testing, we push
-						the boundaries of what's possible in frontend development. Our team integrates design
-						thinking methodologies—including discovery, empathizing, research, ideation,
-						prototyping, and testing—to elevate your customer experiences through tailored
-						state-of-the-art frontend technologies.
+						{m.engineering_services_websites_types_copy2()}
 					</p>
 				</div>
 			</div>
@@ -114,7 +106,7 @@
 <section data-animate="true" class="section section-partner-cards">
 	<div class="relative col-span-2 grid _h-60 w-full grid-cols-2 items-center overflow-hidden md:col-span-3 md:grid-cols-3 xl:grid-cols-6">
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b xl:border-b-0 lg:h-60">
-            <a aria-label="Prismic Headless CMS Solution" class="card-hover absolute inset-0 z-10" href="/technology/coolify">
+            <a aria-label="Coolify self-hosting with superpowers" class="card-hover absolute inset-0 z-10" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
                     <Coolify class="h-fit w-36 text-foreground" />
                 </div>
@@ -122,31 +114,23 @@
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
 		</div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l irst:border-l-0 border-b xl:border-b-0 lg:h-60">
-            <a aria-label="Prismic Headless CMS Solution" class="card-hover absolute inset-0 z-10" href="/technology/sanity">
+            <a aria-label="Strapi Open Source Headless CMS" class="card-hover absolute inset-0 z-10" href="https://strapi.io/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
-                    <Sanity class="h-fit w-36 text-foreground" />
+                    <Strapi class="h-fit w-36 text-foreground" />
                 </div>
             </a>
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b xl:border-b-0 lg:h-60">
-            <a aria-label="Prismic Headless CMS Solution" class="card-hover absolute inset-0 z-10" href="/technology/strapi">
-                <div class="flex h-full w-full items-center justify-center">
-                    <Strapi class="h-fit w-36 text-foreground" />
-                </div>
-            </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
-		</div>
-		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b md:border-b-0 lg:h-60">
-            <a aria-label="Prismic Headless CMS Solution" class="card-hover absolute inset-0 z-10" href="/technology/svelte">
+            <a aria-label="Svelte UI Framework" class="card-hover absolute inset-0 z-10" href="https://svelte.dev/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
                     <Svelte class="h-fit w-36 text-foreground" />
                 </div>
             </a>
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
 		</div>
-		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
-            <a aria-label="Prismic Headless CMS Solution" class="card-hover absolute inset-0 z-10" href="/technology/astro">
+		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b md:border-b-0 lg:h-60">
+            <a aria-label="Astro Framework" class="card-hover absolute inset-0 z-10" href="https://astro.build/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
                     <Astro class="h-fit w-36 text-foreground" />
                 </div>
@@ -154,7 +138,15 @@
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
 		</div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
-            <a aria-label="Prismic Headless CMS Solution" class="card-hover absolute inset-0 z-10" href="/technology/tailwindcss">
+            <a aria-label="bits-UI Headless Svelte Components" class="card-hover absolute inset-0 z-10" href="https://bits-ui.com/" target="_blank" rel="noreferrer noopener">
+                <div class="flex h-full w-full items-center justify-center">
+                    <Bitsui class="h-fit w-32 text-foreground" />
+                </div>
+            </a>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
+		</div>
+		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
+            <a aria-label="TailwindCSS utility-first CSS Framework" class="card-hover absolute inset-0 z-10" href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
                     <Tailwindcss class="h-fit w-36 text-foreground" />
                 </div>
@@ -165,78 +157,75 @@
 </section>
 <!-- end section partners -->
 <!-- section archtecture -->
-<section class="section section-rich-text">
-	<div class="rich-text px-5 py-10 lg:col-start-2 lg:border-l">
-		<h2>COMPOSABLE AND HEADLESS ARCHITECTURE</h2>
-		<p>
-			Using composable and headless architectures empowers your business to build flexible and
-			scalable digital platforms. By decoupling frontend and backend systems, you get unparalleled
-			customization, rapid development cycles, and an outstanding user experience, all while
-			maintaining backend stability.
+<section class="section">
+	<div class="flex flex-col flex-start gap-4 lg:border-l lg:col-start-2 lg:col-span-2 pt-20 px-5 py-5">
+		<h2 class="split title max-w-md text-4xl tracking-tighter lg:text-5xl">{m.engineering_services_websites_architecture_headline()}</h2>
+		<p class="text-muted-foreground max-w-4xl">
+			{m.engineering_services_websites_architecture_copy()}
 		</p>
 	</div>
 </section>
 <!-- end section architekture -->
-<!-- section types -->
+<!-- section description -->
 <section data-animate="true" class="section">
     <ol class="grid-global ordered-list">
         <li class="relative flex min-h-75 flex-col items-start justify-between gap-6 border-b -mb-px p-5 lg:min-h-79.5 lg:last:border-r-0">
             <span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
             <div class="flex-start flex w-full flex-col gap-4">
-                <span class="title max-w-md text-3xl tracking-tighter">FLEXIBLE AND SCALABLE ARCHITECTURE</span>
+                <span class="title max-w-md text-3xl tracking-tighter">{m.engineering_services_websites_architecture_desc_headline1()}</span>
                 <div class="flex flex-col gap-6 lg:max-w-md">
-                    <p class="text-sm text-muted-foreground">With an API-first approach, our composable architecture gives you control over your website and app’s structure, allowing for easy adaptability. This flexibility means you can quickly respond to market changes or add new features without rebuilding your entire platform.</p>
+                    <p class="text-sm text-muted-foreground">{m.engineering_services_websites_architecture_desc_copy1()}</p>
                 </div>
             </div>
         </li>
         <li class="relative flex min-h-75 flex-col items-start justify-between gap-6 border-b -mb-px p-5 lg:min-h-79.5 lg:last:border-r-0 lg:border-l">
             <span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
             <div class="flex-start flex w-full flex-col gap-4">
-                <span class="title max-w-md text-3xl tracking-tighter">Fast and Optimized Websites</span>
+                <span class="title max-w-md text-3xl tracking-tighter">{m.engineering_services_websites_architecture_desc_headline2()}</span>
                 <div class="flex flex-col gap-6 lg:max-w-md">
-                    <p class="text-sm text-muted-foreground">By adopting advanced frameworks like Next.js and Svelte, we create fast-loading websites that enhance user experience and improve SEO. Our use of techniques like pre-rendering and server-side rendering means your site loads quickly and performs optimally, keeping visitors engaged and boosting conversion rates.</p>
+                    <p class="text-sm text-muted-foreground">{m.engineering_services_websites_architecture_desc_copy2()}</p>
                 </div>
             </div>
         </li>
         <li class="relative flex min-h-75 flex-col items-start justify-between gap-6 border-b -mb-px p-5 lg:min-h-79.5 lg:last:border-r-0 lg:border-l">
             <span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
             <div class="flex-start flex w-full flex-col gap-4">
-                <span class="title max-w-md text-3xl tracking-tighter">Improved User Experience</span>
+                <span class="title max-w-md text-3xl tracking-tighter">{m.engineering_services_websites_architecture_desc_headline3()}</span>
                 <div class="flex flex-col gap-6 lg:max-w-md">
-                    <p class="text-sm text-muted-foreground">We prioritize creating intuitive and responsive interfaces that provide a remarkable user experience across all devices. Using tools like Figma, Tailwind CSS, and React, your site’s design is visually appealing and highly functional, boosting user satisfaction and engagement.</p>
+                    <p class="text-sm text-muted-foreground">{m.engineering_services_websites_architecture_desc_copy3()}</p>
                 </div>
             </div>
         </li>
         <li class="relative flex min-h-75 flex-col items-start justify-between gap-6 border-b -mb-px p-5 lg:min-h-79.5 lg:last:border-r-0">
             <span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
             <div class="flex-start flex w-full flex-col gap-4">
-                <span class="title max-w-md text-3xl tracking-tighter">Optimized Content Management</span>
+                <span class="title max-w-md text-3xl tracking-tighter">{m.engineering_services_websites_architecture_desc_headline4()}</span>
                 <div class="flex flex-col gap-6 lg:max-w-md">
-                    <p class="text-sm text-muted-foreground">As a trusted Prismic/Contentful partner, we rely on these headless CMS solutions to separate your content management from the frontend development. This decoupled approach allows for faster content updates, empowers marketing teams, and offers greater flexibility, so your site always provides fresh, relevant information.</p>
+                    <p class="text-sm text-muted-foreground">{m.engineering_services_websites_architecture_desc_copy4()}</p>
                 </div>
             </div>
         </li>
         <li class="relative flex min-h-75 flex-col items-start justify-between gap-6 border-b -mb-px p-5 lg:min-h-79.5 lg:last:border-r-0 lg:border-l">
             <span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
             <div class="flex-start flex w-full flex-col gap-4">
-                <span class="title max-w-md text-3xl tracking-tighter">Embedded SEO Optimization</span>
+                <span class="title max-w-md text-3xl tracking-tighter">{m.engineering_services_websites_architecture_desc_headline5()}</span>
                 <div class="flex flex-col gap-6 lg:max-w-md">
-                    <p class="text-sm text-muted-foreground">Our frontend development services focus on SEO best practices, from optimizing site structure to fast load times. A well-optimized website ranks higher on search engines and attracts more organic traffic, driving growth and increasing your online visibility.</p>
+                    <p class="text-sm text-muted-foreground">{m.engineering_services_websites_architecture_desc_copy5()}</p>
                 </div>
             </div>
         </li>
         <li class="relative flex min-h-75 flex-col items-start justify-between gap-6 border-b -mb-px p-5 lg:min-h-79.5 lg:last:border-r-0 lg:border-l">
             <span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
             <div class="flex-start flex w-full flex-col gap-4">
-                <span class="title max-w-md text-3xl tracking-tighter">SUPERIOR DEVELOPMENT AND DEPLOYMENT</span>
+                <span class="title max-w-md text-3xl tracking-tighter">{m.engineering_services_websites_architecture_desc_headline6()}</span>
                 <div class="flex flex-col gap-6 lg:max-w-md">
-                    <p class="text-sm text-muted-foreground">We set up robust CI/CD pipelines, and with Vercel as our preferred platform for deployment, your website is hosted on reliable, high-performance infrastructure. Performance optimization, cross-browser and cross-device testing, and continuous monitoring and maintenance keep your site running flawlessly from launch to long-term operation.</p>
+                    <p class="text-sm text-muted-foreground">{m.engineering_services_websites_architecture_desc_copy6()}</p>
                 </div>
             </div>
         </li>
     </ol>
 </section>
-<!-- end section types -->
+<!-- end section description -->
  <!-- section portfolio -->
 <section data-animate="true" class="_section-portfolio-cards">
 	<header class="grid-global has-[+_*]:border-b">
@@ -312,9 +301,24 @@
 <!-- section portfolio -->
 <!-- section booking -->
 <Booking
-	title={m.engineering_booking_title()}
-	description={m.engineering_booking_description()}
-	cta={m.engineering_booking_cta()}
+	title={m.engineering_services_websites_booking_title()}
+	description={m.engineering_services_websites_booking_description()}
+	cta={m.engineering_services_websites_booking_cta()}
 	link={m.nav_contact()}
 />
 <!-- end section booking -->
+<style>
+	.title {
+		text-transform: uppercase;
+		/* font-stretch: 60%; */
+		/* font-variation-settings: "wght" 450; */
+		line-height: 0.9;
+		font-family: var(--font-headline)
+	}
+
+	@media (min-width: 1024px) {
+		.title {
+			font-variation-settings: "wght" 450
+		}
+	}
+</style>
