@@ -17,6 +17,7 @@
 	import { SplitText } from 'gsap/SplitText';
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
+	import Railway from '$lib/assets/images/logo/partner/Railway.svelte';
 	
 	gsap.registerPlugin(SplitText);
     gsap.registerPlugin(ScrollTrigger);
@@ -118,24 +119,28 @@
 		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">{m.engineering_technologies()}</h2>
 	</div>
 	<div class="grid grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-cols-4 text-muted-foreground">
-		<a aria-label="Prismic Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://prismic.io/" target="_blank" rel="noreferrer noopener">
+		<!-- <a aria-label="Prismic Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://prismic.io/" target="_blank" rel="noreferrer noopener">
 			<Prismic class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
-        </a>
+        </a> -->
         <a aria-label="Sanity Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener">
-			<Sanity class="h-fit w-32 text-foreground" />
+			<Sanity class="h-fit w-52 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
         <a aria-label="Strapi Open Source Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://strapi.io/" target="_blank" rel="noreferrer noopener">
-            <Strapi class="h-fit w-36 text-foreground" />
+            <Strapi class="h-fit w-32 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
+        </a>
+		<a aria-label="Railway | the all-in-one intelligent cloud provider" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://railway.com/" target="_blank" rel="noreferrer noopener">
+			<Railway class="h-fit w-56 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
         </a>
         <a aria-label="Coolify self-hosting with superpowers" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
 			<Coolify class="h-fit w-32 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
         </a>
         <a aria-label="Github Repo Host" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b lg:border-b-0 p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://github.com/" target="_blank" rel="noreferrer noopener">
-			<Github class="h-fit w-36 text-foreground" />
+			<Github class="h-fit w-34 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Repository Host</span>
         </a>
         <a aria-label="OpenAI ChatCPT" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b lg:border-b-0 p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://openai.com/" target="_blank" rel="noreferrer noopener">

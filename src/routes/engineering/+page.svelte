@@ -26,6 +26,7 @@
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import Bitsui from '$lib/assets/images/logo/partner/Bitsui.svelte';
+	import Railway from '$lib/assets/images/logo/partner/Railway.svelte';
 
 	gsap.registerPlugin(SplitText);
     gsap.registerPlugin(ScrollTrigger);
@@ -148,27 +149,23 @@
 		<h2 class="text-muted-foreground p-5 font-menu uppercase text-xs lg:sticky lg:top-16">{m.engineering_technologies()}</h2>
 	</div>
 	<div class="grid grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-cols-4 text-muted-foreground">
-		<a aria-label="Prismic Headless CMS" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://prismic.io/" target="_blank" rel="noreferrer noopener">
-			<Prismic class="h-fit w-36 text-foreground" />
+        <a aria-label="Sanity Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener">
+			<Sanity class="h-fit w-52 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a aria-label="Sanity Headless CMS" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.sanity.io/" target="_blank" rel="noreferrer noopener">
-			<Sanity class="h-fit w-32 text-foreground" />
+        <a aria-label="Strapi Open Source Headless CMS" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://strapi.io/" target="_blank" rel="noreferrer noopener">
+            <Strapi class="h-fit w-32 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </a>
-        <a aria-label="Strapi Open Source Headless CMS" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://strapi.io/" target="_blank" rel="noreferrer noopener">
-            <Strapi class="h-fit w-36 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
-        </a>
-        <a aria-label="Stripe Payment Solution" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://stripe.com/" target="_blank" rel="noreferrer noopener">
-			<Stripe class="h-fit w-32 text-foreground" />
+        <a aria-label="Stripe Payment Solution" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://stripe.com/" target="_blank" rel="noreferrer noopener">
+			<Stripe class="h-fit w-30 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Payment Solution</span>
         </a>
-        <a aria-label="Svelte UI Framework" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://svelte.dev/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="Svelte UI Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://svelte.dev/" target="_blank" rel="noreferrer noopener">
 			<Svelte class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a aria-label="Astro Framework" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://astro.build/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="Astro Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://astro.build/" target="_blank" rel="noreferrer noopener">
 			<Astro class="h-fit w-32 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
@@ -176,43 +173,47 @@
 			<Angular class="h-fit w-36 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a> -->
-        <a aria-label="Vue Framework" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://vuejs.org/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="Vue Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://vuejs.org/" target="_blank" rel="noreferrer noopener">
 			<Vuejs class="h-fit w-28 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a aria-label="TailwindCSS utility-first CSS Framework" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener">
-			<Tailwindcss class="h-fit w-40 text-foreground" />
+        <a aria-label="TailwindCSS utility-first CSS Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener">
+			<Tailwindcss class="h-fit w-46 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-		<a aria-label="bits-UI Headless Svelte Components" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://bits-ui.com/" target="_blank" rel="noreferrer noopener">
-			<Bitsui class="h-fit w-32 text-foreground" />
+		<a aria-label="bits-UI Headless Svelte Components" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://bits-ui.com/" target="_blank" rel="noreferrer noopener">
+			<Bitsui class="h-fit w-30 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a aria-label="Coolify self-hosting with superpowers" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
-			<Coolify class="h-fit w-32 text-foreground" />
-			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
+		<a aria-label="Railway | the all-in-one intelligent cloud provider" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://railway.com/" target="_blank" rel="noreferrer noopener">
+			<Railway class="h-fit w-56 text-foreground" />
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
         </a>
-        <a aria-label="Github Repo Host" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://github.com/" target="_blank" rel="noreferrer noopener">
-			<Github class="h-fit w-36 text-foreground" />
+        <a aria-label="Coolify self-hosting with superpowers" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
+			<Coolify class="h-fit w-32 text-foreground" />
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
+        </a>
+        <a aria-label="Github Repo Host" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://github.com/" target="_blank" rel="noreferrer noopener">
+			<Github class="h-fit w-34 text-foreground" />
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Repository Host</span>
         </a>
-        <a aria-label="nodejs JS runtime environment" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://nodejs.org/" target="_blank" rel="noreferrer noopener">
-			<Nodejs class="h-14 w-28 text-foreground" />
+        <a aria-label="nodejs JS runtime environment" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://nodejs.org/" target="_blank" rel="noreferrer noopener">
+			<Nodejs class="h-14 w-26 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a aria-label="Builder.io collab workspace for code" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.builder.io/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="Builder.io collab workspace for code" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.builder.io/" target="_blank" rel="noreferrer noopener">
 			<Builderio class="h-fit w-36 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a aria-label="Auth0 authentication and authorization platform" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://auth0.com/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="Auth0 authentication and authorization platform" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://auth0.com/" target="_blank" rel="noreferrer noopener">
 			<Auth0 class="h-fit w-30 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
         </a>
-        <a aria-label="OpenAI ChatCPT" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://openai.com/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="OpenAI ChatCPT" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://openai.com/" target="_blank" rel="noreferrer noopener">
 			<Openai class="h-fit w-34 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
         </a>
-        <a aria-label="Anthropic" class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.anthropic.com/" target="_blank" rel="noreferrer noopener">
+        <a aria-label="Anthropic" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.anthropic.com/" target="_blank" rel="noreferrer noopener">
 			<Anthropic class="h-fit w-38 text-foreground" />
 			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">AI Knowledge Solution</span>
         </a>

@@ -14,6 +14,7 @@
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import Bitsui from '$lib/assets/images/logo/partner/Bitsui.svelte';
+	import Railway from '$lib/assets/images/logo/partner/Railway.svelte';
 
 	gsap.registerPlugin(SplitText);
     gsap.registerPlugin(ScrollTrigger);
@@ -78,23 +79,23 @@
 <section data-animate="true" class="section">
 	<ol class="grid-global ordered-list">
 		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 border-b lg:border-b-0 p-5 lg:min-h-79.5 lg:last:border-r-0">
-			<span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
+			<span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation">{m.engineering_services_websites_solution()}</span>
 			<div class="flex-start flex w-full flex-col gap-4">
 				<span class="title max-w-sm text-3xl tracking-tighter uppercase">{m.engineering_services_websites_types_headline1()}</span>
 				<div class="flex flex-col gap-6 lg:max-w-md">
 					<p class="text-sm text-muted-foreground">
-						{m.engineering_services_websites_types_copy1()}
+						{@html m.engineering_services_websites_types_copy1()}
 					</p>
 				</div>
 			</div>
 		</li>
 		<li class="relative -mb-px flex min-h-75 flex-col items-start justify-between gap-6 _border-b lg:border-b-0 p-5 lg:min-h-79.5 lg:border-l lg:last:border-r-0">
-			<span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation"></span>
+			<span class="text-neutral ordered-list-count font-menu text-xs text-muted-foreground uppercase" role="presentation">{m.engineering_services_websites_solution()}</span>
 			<div class="flex-start flex w-full flex-col gap-4">
 				<span class="title max-w-sm text-3xl tracking-tighter">{m.engineering_services_websites_types_headline2()}</span>
 				<div class="flex flex-col gap-6 lg:max-w-md">
 					<p class="text-sm text-muted-foreground">
-						{m.engineering_services_websites_types_copy2()}
+						{@html m.engineering_services_websites_types_copy2()}
 					</p>
 				</div>
 			</div>
@@ -106,17 +107,17 @@
 <section data-animate="true" class="section section-partner-cards">
 	<div class="relative col-span-2 grid _h-60 w-full grid-cols-2 items-center overflow-hidden md:col-span-3 md:grid-cols-3 xl:grid-cols-6">
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b xl:border-b-0 lg:h-60">
-            <a aria-label="Coolify self-hosting with superpowers" class="card-hover absolute inset-0 z-10" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
+            <a aria-label="Railway | the all-in-one intelligent cloud provider" class="card-hover absolute inset-0 z-10" href="https://railway.com/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
-                    <Coolify class="h-fit w-36 text-foreground" />
+                    <Railway class="h-fit w-52 text-foreground" />
                 </div>
             </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
 		</div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l irst:border-l-0 border-b xl:border-b-0 lg:h-60">
             <a aria-label="Strapi Open Source Headless CMS" class="card-hover absolute inset-0 z-10" href="https://strapi.io/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
-                    <Strapi class="h-fit w-36 text-foreground" />
+                    <Strapi class="h-fit w-32 text-foreground" />
                 </div>
             </a>
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
@@ -132,7 +133,7 @@
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b md:border-b-0 lg:h-60">
             <a aria-label="Astro Framework" class="card-hover absolute inset-0 z-10" href="https://astro.build/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
-                    <Astro class="h-fit w-36 text-foreground" />
+                    <Astro class="h-fit w-32 text-foreground" />
                 </div>
             </a>
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
@@ -140,7 +141,7 @@
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
             <a aria-label="bits-UI Headless Svelte Components" class="card-hover absolute inset-0 z-10" href="https://bits-ui.com/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
-                    <Bitsui class="h-fit w-32 text-foreground" />
+                    <Bitsui class="h-fit w-30 text-foreground" />
                 </div>
             </a>
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
@@ -148,7 +149,7 @@
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
             <a aria-label="TailwindCSS utility-first CSS Framework" class="card-hover absolute inset-0 z-10" href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener">
                 <div class="flex h-full w-full items-center justify-center">
-                    <Tailwindcss class="h-fit w-36 text-foreground" />
+                    <Tailwindcss class="h-fit w-42 text-foreground" />
                 </div>
             </a>
             <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
@@ -161,7 +162,7 @@
 	<div class="flex flex-col flex-start gap-4 lg:border-l lg:col-start-2 lg:col-span-2 pt-20 px-5 py-5">
 		<h2 class="split title max-w-md text-4xl tracking-tighter lg:text-5xl">{m.engineering_services_websites_architecture_headline()}</h2>
 		<p class="text-muted-foreground max-w-4xl">
-			{m.engineering_services_websites_architecture_copy()}
+			{@html m.engineering_services_websites_architecture_copy()}
 		</p>
 	</div>
 </section>

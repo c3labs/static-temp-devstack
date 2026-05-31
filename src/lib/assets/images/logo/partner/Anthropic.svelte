@@ -1,7 +1,7 @@
 <script>
     let { class: className, ...rest } = $props();
 </script>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 111 14" height="14" width="111" class={className} {...rest}>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 111 14" height="14" width="111" class={className} {...rest} aria-label="Anthropic logo">
 <path fill="currentColor" d="M27.7207 3.22292H31.7298V12.8616H34.2886V3.22292H38.2976V0.919922H27.7207V3.22292Z"></path>
 <path fill="currentColor" d="M23.1998 9.27912L17.826 0.919922H14.9258V12.8616H17.3995V4.50242L22.7733 12.8616H25.6733V0.919922H23.1998V9.27912Z"></path>
 <path fill="currentColor" d="M48.5343 5.67952H42.9046V0.919922H40.3457V12.8616H42.9046V7.98262H48.5343V12.8616H51.0932V0.919922H48.5343V5.67952Z"></path>

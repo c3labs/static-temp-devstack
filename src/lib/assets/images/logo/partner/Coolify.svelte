@@ -1,7 +1,7 @@
 <script>
     let { class: className, ...rest } = $props();
 </script>
-<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="337" height="88" viewBox="0 0 337 88" class={className} {...rest}>
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="337" height="88" viewBox="0 0 337 88" class={className} {...rest} aria-label="Coolify logo">
     <g transform="matrix(0.164773,0,0,0.164773,0.000659,13)">
         <path d="M63.996,64L63.996,0L319.996,0L319.996,64L63.996,64ZM63.996,256L-0.004,256L-0.004,64L63.996,64L63.996,256ZM63.996,256L319.996,256L319.996,320L63.996,320L63.996,256ZM95.996,96L95.996,71.067L327.062,71.067L327.062,32L351.996,32L351.996,96L95.996,96ZM95.996,96L95.996,248.533L71.063,248.533L71.063,96L95.996,96ZM56.93,263.066L56.93,288L31.997,288L31.997,263.066L56.93,263.066ZM351.996,352L95.996,352L95.996,327.066L327.062,327.066L327.062,288L351.996,288L351.996,352Z" style="fill-rule:nonzero;"/>
     </g>

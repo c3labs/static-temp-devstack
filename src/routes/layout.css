@@ -323,8 +323,8 @@ html.dark {
 		counter-increment: index
 	}
 
-	.ordered-list-count:before {
-		content: counters(index,".",decimal-leading-zero)
+	.ordered-list-count:after {
+		content: " " counters(index,".",decimal-leading-zero)
 	}
 
 	.large-hero {
