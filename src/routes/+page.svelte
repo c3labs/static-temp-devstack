@@ -116,9 +116,9 @@
 	</video> -->
 	<div class="_border-white/20 _border col-span-3 grid grid-cols-1 h-screen leading-[1.6] lg:grid-cols-3 max-h-375 _mix-blend-difference relative z-0">
 		<div class="bottom-text hidden lg:flex">
-			<a target="_blank" rel="noopener noreferrer" class="bottom-text p-0" href="https://maps.app.goo.gl/">
-				<span class="latitude">34.07062188658319</span>,<br>
-				<span class="longitude">-84.27424250862218</span>
+			<a target="_blank" rel="noopener noreferrer" class="bottom-text p-0" href="https://maps.app.goo.gl/NgyEEXcEXXQMXedR9">
+				<span class="latitude">48.4610768</span>,<br>
+				<span class="longitude">11.1152396</span>
 			</a>
 		</div>
 		<div class="bottom-text flex lg:border-l">

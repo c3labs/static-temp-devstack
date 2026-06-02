@@ -150,15 +150,15 @@
 <!-- footer area  -->
 <footer id="footer">
 	<div class="mt-32 grid grid-cols-1 p-5 lg:grid-cols-3 md:p-0 font-menu uppercase text-xs text-muted-foreground">
-		<a target="_blank" rel="noopener noreferrer" class="hidden text-neutral lg:block lg:p-5" href="https://maps.app.goo.gl/">
-			<span class="latitude">34.07062188658319</span>
+		<a target="_blank" rel="noopener noreferrer" class="hidden text-neutral lg:block lg:p-5" href="https://maps.app.goo.gl/NgyEEXcEXXQMXedR9">
+			<span class="latitude">48.4610768</span>
 			,<br>
-			<span class="longitude">-84.27424250862218</span>
+			<span class="longitude">11.1152396</span>
 		</a>
 		<div class="col-span-2 grid grid-cols-3 md:grid-cols-5 md:p-5 [&amp;_a]:py-1">
 			<div class="col-span-3 grid grid-cols-3">
 				<a target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/c3labs.bsky.social">Bluesky</a>
-				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/c3labs">LinkedIn</a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/c3labs">LinkedIn</a>
 				<a target="_blank" rel="noopener noreferrer" href="https://pinterest.com/c3labs">Pinterest</a>
 				<a href="/about">About</a>
 				<a href="/legal">Legal</a>
