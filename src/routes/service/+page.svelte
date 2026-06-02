@@ -64,7 +64,17 @@
 
 	});
 </script>
+<svelte:head>
+	<title>{m.service_headline()} | c3labs</title>
+	<meta name="description" content="{m.service_meta_description()}">
 
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="{m.service_headline()} | c3labs">
+	<meta property="og:description" content="{m.service_meta_description()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="{m.service_headline()} | c3labs">
+	<meta name="twitter:description" content="{m.service_meta_description()}">
+</svelte:head>
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">Service</h1>
 	<h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
@@ -137,7 +147,7 @@
         </a>
         <a aria-label="Coolify self-hosting with superpowers" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://coolify.io/" target="_blank" rel="noreferrer noopener">
 			<Coolify class="h-fit w-32 text-foreground" />
-			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Partner</span>
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Hosting Solution</span>
         </a>
         <a aria-label="Github Repo Host" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b lg:border-b-0 p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://github.com/" target="_blank" rel="noreferrer noopener">
 			<Github class="h-fit w-34 text-foreground" />

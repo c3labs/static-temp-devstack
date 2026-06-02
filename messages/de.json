@@ -9,6 +9,7 @@
 	"nav_contact": "Kontakt",
 	"hello_world": "Hallo, {name} in deutsch",
 	"home_welcome": "Heben Sie mit uns Ihre digitale Kommunikation auf ein neues Niveau",
+	"home_meta_description": "Büro für mediale Kommunikation | Aichach, wir sind Experten für digitale Erlebnisse",
 	"home_hero_headline": "Die Revolution der KI-Suche",
 	"home_hero_subline": "KI verändert grundlegend wie Kunden suchen und Entscheidungen treffen - erfahren Sie mehr darüber, um nichts zu verpassen.",
 	"home_services_design_subline": "Heben Sie Ihre digitale Erscheinung auf ein neues Level und begeistern Sie Ihre Nutzer. Alles beginnt hier.",
@@ -29,6 +30,7 @@
 
 	"ai_headline": "Die Revolution der KI-Suche",
 	"ai_title": "KI Einblicke",
+	"ai_meta_description": "Google wird zur Antwortmaschine: Warum traditionelles SEO nicht mehr reicht und wie Sie 2026 durch Markenaufbau Spitzenplätze in KI-Suchergebnissen sichern.",
 	"ai_subline": "Zahlen und Erkenntnisse",
 	"ai_p1_headline": "Was verraten die SEO-Daten von 2025 ",
 	"ai_p2_headline": "Wichtigste Erkenntnisse und Statistiken",
@@ -42,6 +44,7 @@
 	"ai_booking_cta": "Jetzt unverbindlich beraten lassen",
 
 	"portfolio_title": "Portfolio",
+	"portfolio_meta_description": "Unsere Arbeiten sprechen für sich - Portfolio",
 	"portfolio_headline": "Unsere Arbeiten sprechen für sich",
 	"portfolio_metadata_sector": "Branche",
 	"portfolio_metadata_scope": "Leistungen",
@@ -60,16 +63,21 @@
 	"portfolio_booking_cta": "Jetzt Termin buchen",
 
 	"manifest_title": "Manifest",
+	"manifest_meta_description": "Unsere Ansichten zur Zukunft des Webs. Lesen Sie im C3Labs-Manifest alles über Sicherheitsrisiken, llms.txt und die Optimierung für autonome KI-Agenten.",
 	"manifest_headline": "Unsere Ansichten",
 	"manifest_form_headline": "Bleib verbunden",
 	"manifest_form_text": "Möchten Sie mit uns in Verbindung bleiben? Abonnieren Sie unseren Newsletter um Updates zu erhalten woran wir arbeiten und worüber wir nachdenken.",
 	"manifest_form_placeholder": "email eintragen",
 	"manifest_form_send": "Abonnieren",
 	"manifest_1_headline": "Was isitagentready.com tatsächlich auswertet",
+	"manifest_1_meta_description": "Wie fit ist Ihre Website für KI-Bots? Erfahren Sie im Detail, welche Standards Cloudflares isitagentready.com prüft – von robots.txt bis Agentic Commerce.",
 	"manifest_2_headline": "So wird ihre Website KI-Agenten-tauglich",
+	"manifest_2_meta_description": "Werden Sie von ChatGPT & Co. gefunden: Leitfaden zur Optimierung für KI-Agenten mittels MCP-Serverkarten, Token-Effizienz und Agentic Commerce Protokollen.",
 	"manifest_3_headline": "Wordpress: Mehr Problem als Lösung",
+	"manifest_3_meta_description": "WordPress is a mess! Warum das CMS durch 11.000+ Sicherheitslücken und das 5-Stunden-Problem laut Patchstack-Report 2026 von der Lösung zum Risiko wird.",
 	"manifest_3_subline": "Patchstack veröffentlicht jedes Jahr ein Whitepaper zum Stand der WordPress-Sicherheit. Jedes Jahr werden die Zahlen dramatischer.",
 	"manifest_4_headline": "llms.txt: So versteht KI Ihre Website",
+	"manifest_4_meta_description": "Wie gut versteht ChatGPT Ihre Website? Erfahren Sie, warum der neue Webstandard llms.txt die Brücke zwischen komplexem HTML und KI-Modellen schlägt.",
 	"manifest_booking_title": "Lassen Sie uns darüber sprechen",
 	"manifest_booking_description": "Vereinbaren Sie einen Termin. Wir freuen uns auf ein interessantes Gespräch.",
 	"manifest_booking_cta": "Jetzt Termin buchen",
@@ -109,6 +117,7 @@
 	"design_booking_cta": "Jetzt Termin buchen",
 
 	"engineering_headline": "Optimierter Code, als Prinzip",
+	"engineering_meta_description": "Performante, skalierbare digitale Produkte: Erfahren Sie mehr über unsere Engineering-First-Methodik für Composable Architecture, Headless CMS und KI-SEO.",
 	"engineering_services": "Entwicklungs-Leistungen",
 	"engineering_services_blockquote": "Wir entwickeln performante, skalierbare und solide digitale Produkte unter Einsatz moderner, modularer Technologien, KI sowie einer Engineering-First-Methodik. Unser disziplinierter Ansatz stellt sicher, dass die maßgeschneiderten technischen Lösungen die individuellen Anforderungen Ihres Unternehmens exakt erfüllen.",
 	"engineering_technologies": "Technologien",
@@ -150,8 +159,9 @@
 	"engineering_booking_cta": "Jetzt Termin buchen",
 
 	"engineering_services_websites_solution": "Lösung",
+	"engineering_services_websites_meta_desription": "Moderne Webentwicklung ohne Kompromisse: c3labs entwickelt ultraschnelle Websites & Web-Apps mit zukunftssicheren Frameworks und Engineering-First-Methodik.",
 	"engineering_services_websites_h1": "Sie benötigen eine neue Website?",
-	"engineering_services_websites_h2": "Okay! Sie brauchen Sie schnell, richtig? Natürlich sollte sie nicht zu teuer sein – klar! Wir haben dafür eine Lösung!",
+	"engineering_services_websites_h2": "Okay! Sie brauchen Sie schnell, richtig? Natürlich sollte sie nicht zu teuer sein – klar! Wir haben da eine Lösung!",
 	"engineering_services_websites_types_headline1": "Starter Website",
 	"engineering_services_websites_types_copy1": "Dies ist unsere Lösung für Projekte mit kleinem Budget - für StartUps, Einzelunternehmer oder KMUs.<br><br>Wir entwerfen, erstellen und betreiben Ihre Website für Sie, damit Sie sich um Ihr Unternehmen kümmern können.<br><br>Ihre Website ensteht bei uns in Handarbeit und wird durch Einsatz modernster Tools wie Astro zu einer sicheren, statischen und hochperformanten digitalen Visitenkarte Ihres Unternehmens.<br><br>Vergessen Sie die lästige Website-Aktualisierung. Wir kümmern uns um alle Aktualisierungen und die Wartung, damit Ihre Website stets aktuell und funktionsfähig ist. Benötigen Sie eine Änderung oder etwas Neues? Kontaktieren Sie uns einfach, und wir erledigen das für Sie.<br><br>Hosting, Sicherheit und Wartung sind in der monatlichen Gebühr enthalten. Keine versteckten Kosten.<br><br>kostenoptimiert sicher managed monitored astro driven incl. hosting und Service Retainer.",
 	"engineering_services_websites_types_headline2": "Performance Website",
@@ -175,6 +185,7 @@
 	"engineering_services_websites_booking_cta": "Jetzt Termin buchen",
 
 	"service_headline": "Next-Level Service",
+	"service_meta_description": "Sie haben für uns vom ersten Tag an Priorität. Jederzeit, überall und auf jede erdenkliche Weise – wir stehen hinter Ihnen. Unsere Kunden erwarten und erhalten erstklassige Dienstleistungen in den Bereichen Marktforschung, Entwicklung, Design und Beratung.",
 	"service_principles": "Prinzipien",
 	"service_principles_p1": "Wir lassen Sie gut aussehen",
 	"service_principles_p2": "Beziehungen sind alles",
@@ -184,14 +195,12 @@
 	"service_principles_blockquote": "Sie haben für uns vom ersten Tag an Priorität. Jederzeit, überall und auf jede erdenkliche Weise – wir stehen hinter Ihnen. Unsere Kunden erwarten und erhalten erstklassige Dienstleistungen in den Bereichen Marktforschung, Entwicklung, Design und Beratung.",
 	"service_areas_headline": "Service Bereiche",
 	"service_areas_a1_headline": "Client Onboarding",
-	"service_areas_a1_copy": "Ich helfe meinen Kunden in die Pötte zu kommen weil ich Tools zur Verfügung stelle [ Github | ... ] die es automatisieren mir Material, Infos, usw. zukommen zu lassen weil ich denen nicht immer hinterher rennen kann!",
+	"service_areas_a1_copy": "Willkommen an Bord! Großartige interaktive Erlebnisse entstehen durch perfekte Zusammenarbeit. Um sicherzustellen, dass wir uns vom ersten Tag an mit voller Energie Ihrem Projekt widmen können, haben wir unseren Onboarding-Prozess vollständig digitalisiert. Kein Papierkram, keine endlosen Feedbackschleifen – sondern ein strukturierter, transparenter Start in Ihren digitalen Erfolg. [ GitHub | Notion | Figma ]",
 	"service_areas_a2_headline": "Security Assessment",
-	"service_areas_a2_copy": "Wenn Wordpress von der Lösung zum Problem geworden ist macht es Sinn sich die Sache mal genauer anzusehen bevor die Hütte komplett in Flammen steht!",
-	"service_areas_a3_headline": "AI SEO Consulting",
-	"service_areas_a3_copy": "Jede KI-Suchmaschine ist etwas anders, aber die Herangehensweisen bleiben gleich. Neben einer klaren SEO Strategie ist auch eine Überprüfung der technischen Grundlagen ratsam, um die KI-Zugänglichkeit zu gewährleisten. Wir stehen Ihnen dabei gerne mit Rat und Tat zur Seite.",
+	"service_areas_a2_copy": "Wenn sich WordPress von der Lösung zum Problem gewandelt hat, ist es höchste Zeit für einen genauen Blick bevor alles in Flammen aufgeht! Wir unterziehen Ihre WordPress-Installation einem KI-gestützten Penetrationstest und scannen dabei Core, Plugins, Themes sowie Serverkonfigurationen auf potenzielle Schwachstellen. Sie erhalten einen detailierten Risikobericht mit konkreten Handlungsempfehlungen – entweder zur Umsetzung durch Ihre Entwickler oder zur direkten Behebung durch uns im Rahmen unseres Sofortschutz-Services.",
+	"service_areas_a3_headline": "AI SEO Audit",
+	"service_areas_a3_copy": "Jede KI-Suchmaschine ist etwas anders, aber die Herangehensweisen bleiben gleich. Neben einer klaren SEO Strategie ist auch eine Überprüfung der technischen Grundlagen ratsam, um die KI-Zugänglichkeit zu gewährleisten. In einem Deep-Dive-Workshop analysieren wir die technische Machbarkeit. Wir prüfen Ihre CMS-Infrastruktur, JavaScript-Rendering und Core Web Vitals mit KI-gestützten Code-Audits.",
 	"service_booking_title": "Wir stehen hinter Ihnen",
 	"service_booking_description": "Vereinbaren Sie einen Termin. Wir kümmern uns um den Rest.",
-	"service_booking_cta": "Jetzt Termin buchen",
-
-	"manifest_1_copy": "The Monolithic CMS Growth Trap - Whether you're running WordPress, Craft CMS, or Webflow, the story is remarkably similar. These platforms make perfect sense early on—they're accessible, fast to deploy, and don't require significant development investment. But as your content scales and your team grows, the cracks start to show. At Monogram, we've migrated dozens of companies from each of these platforms to headless solutions, and while the technical details differ, the core issue remains the same. What worked for 50 pages starts to fall apart when you scale to hundreds or even thousands of pages."
+	"service_booking_cta": "Jetzt Termin buchen"
 }

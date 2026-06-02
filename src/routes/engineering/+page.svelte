@@ -74,7 +74,17 @@
 	});
 
 </script>
+<svelte:head>
+	<title>{m.engineering_headline()} | c3labs</title>
+	<meta name="description" content="{m.engineering_meta_description()}">
 
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="{m.engineering_headline()} | c3labs">
+	<meta property="og:description" content="{m.engineering_meta_description()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="{m.engineering_headline()} | c3labs">
+	<meta name="twitter:description" content="{m.engineering_meta_description()}">
+</svelte:head>
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">{m.nav_services_engineering()}</h1>
 	<h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">
@@ -163,27 +173,27 @@
         </a>
         <a aria-label="Svelte UI Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://svelte.dev/" target="_blank" rel="noreferrer noopener">
 			<Svelte class="h-fit w-36 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
         <a aria-label="Astro Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://astro.build/" target="_blank" rel="noreferrer noopener">
 			<Astro class="h-fit w-32 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
         <!-- <a	class="md:[&amp;:nth-child(3n+2)]:border-l md:[&amp;:nth-child(3n+3)]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="/technology/shopify">
 			<Angular class="h-fit w-36 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a> -->
         <a aria-label="Vue Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://vuejs.org/" target="_blank" rel="noreferrer noopener">
 			<Vuejs class="h-fit w-28 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
         <a aria-label="TailwindCSS utility-first CSS Framework" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener">
 			<Tailwindcss class="h-fit w-46 text-foreground" />
-			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
 		<a aria-label="bits-UI Headless Svelte Components" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://bits-ui.com/" target="_blank" rel="noreferrer noopener">
 			<Bitsui class="h-fit w-30 text-foreground" />
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
 		<a aria-label="Railway | the all-in-one intelligent cloud provider" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://railway.com/" target="_blank" rel="noreferrer noopener">
 			<Railway class="h-fit w-56 text-foreground" />
@@ -199,15 +209,15 @@
         </a>
         <a aria-label="nodejs JS runtime environment" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://nodejs.org/" target="_blank" rel="noreferrer noopener">
 			<Nodejs class="h-14 w-26 text-foreground" />
-			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
         <a aria-label="Builder.io collab workspace for code" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://www.builder.io/" target="_blank" rel="noreferrer noopener">
 			<Builderio class="h-fit w-36 text-foreground" />
-			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
         <a aria-label="Auth0 authentication and authorization platform" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://auth0.com/" target="_blank" rel="noreferrer noopener">
 			<Auth0 class="h-fit w-30 text-foreground" />
-			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+			<span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>
         </a>
         <a aria-label="OpenAI ChatCPT" class="md:nth-[3n+2]:border-l md:nth-[3n+3]:border-l card-hover relative -mb-px flex  h-62.5 flex-col items-center justify-center border-b p-5 max-md:even:border-l lg:border-l 2xl:h-87.5" href="https://openai.com/" target="_blank" rel="noreferrer noopener">
 			<Openai class="h-fit w-34 text-foreground" />

@@ -59,6 +59,17 @@
 	});
 
 </script>
+<svelte:head>
+	<title>{m.manifest_title()} | c3labs</title>
+	<meta name="description" content="{m.manifest_meta_description()}">
+
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="{m.manifest_title()} | c3labs">
+	<meta property="og:description" content="{m.manifest_meta_description()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="{m.manifest_title()} | c3labs">
+	<meta name="twitter:description" content="{m.manifest_meta_description()}">
+</svelte:head>
 <div class="grid-global">
     <header data-animate="true" class="hero text-hero relative">
         <h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">{m.manifest_title()}</h1>

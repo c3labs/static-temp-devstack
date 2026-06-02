@@ -5,6 +5,17 @@
 	import { ChevronLeft, ExternalLink } from 'lucide-svelte';
 	import { fade } from 'svelte/transition';
 </script>
+<svelte:head>
+	<title>werk d | c3labs</title>
+	<!-- <meta name="description" content="{m.portfolio_meta_description()}"> -->
+
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="werk d | c3labs">
+	<!-- <meta property="og:description" content="{m.portfolio_meta_description()}"> -->
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="werk d | c3labs">
+	<!-- <meta name="twitter:description" content="{m.portfolio_meta_description()}"> -->
+</svelte:head>
 <button 
     in:fade
     onclick={() => {history.back()}}

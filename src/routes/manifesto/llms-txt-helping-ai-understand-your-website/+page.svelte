@@ -57,7 +57,17 @@
 	});
 
 </script>
+<svelte:head>
+	<title>{m.manifest_4_headline()} | c3labs</title>
+	<meta name="description" content="{m.manifest_4_meta_description()}">
 
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="{m.manifest_4_headline()} | c3labs">
+	<meta property="og:description" content="{m.manifest_4_meta_description()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="{m.manifest_4_headline()} | c3labs">
+	<meta name="twitter:description" content="{m.manifest_4_meta_description()}">
+</svelte:head>
 <button
 	in:fade
 	onclick={() => {

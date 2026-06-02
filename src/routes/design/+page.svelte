@@ -54,7 +54,17 @@
 
 	});
 </script>
+<svelte:head>
+	<title>{m.design_headline()} | c3labs</title>
+	<meta name="description" content="{m.design_services_blockquote()}">
 
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="{m.design_headline()} | c3labs">
+	<meta property="og:description" content="{m.design_services_blockquote()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="{m.design_headline()} | c3labs">
+	<meta name="twitter:description" content="{m.design_services_blockquote()}">
+</svelte:head>
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">Design</h1>
 	<h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-start-2 lg:border-l lg:pt-55 lg:text-6xl">

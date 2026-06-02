@@ -89,8 +89,20 @@
 	
 </script>
 
+<svelte:head>
+	<title>{m.home_welcome()} | c3labs</title>
+	<meta name="description" content="{m.home_meta_description()}">
+
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="{m.home_welcome()} | c3labs">
+	<meta property="og:description" content="{m.home_meta_description()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="{m.home_welcome()} | c3labs">
+	<meta name="twitter:description" content="{m.home_meta_description()}">
+</svelte:head>
+
 <header class="hero large-hero relative">
-	<h1 class="sr-only">c3labs | Büro für mediale Kommunikation</h1>
+	<h1 class="sr-only">c3labs | {m.home_weare()}</h1>
 	<div class="absolute flex flex-col h-full items-center justify-center w-full">
 		<h2 in:fly={{ y :10, duration: 350, delay: 500, easing:quadOut}} class="split wrap-break-word absolute z-10 large-hero-headline text-featured w-screen max-w-full col-span-3 flex flex-wrap justify-between gap-x-16 p-3 lg:p-5 font-heroline text-[2.8rem] sm:text-6xl md:text-8xl 2xl:text-9xl leading-[1.1] uppercase tracking-[-0.02em] text-justify font-bold">{m.home_welcome()}</h2>
 	</div>

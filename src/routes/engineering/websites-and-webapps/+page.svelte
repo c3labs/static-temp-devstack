@@ -61,7 +61,17 @@
 
 	});
 </script>
+<svelte:head>
+	<title>Websites & Web-Apps | c3labs</title>
+	<meta name="description" content="{m.engineering_services_websites_meta_desription()}">
 
+	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
+	<meta property="og:title" content="Websites & Web-Apps | c3labs">
+	<meta property="og:description" content="{m.engineering_services_websites_meta_desription()}">
+	<!-- X (Twitter) Cards -->
+    <meta name="twitter:title" content="Websites & Web-Apps | c3labs">
+	<meta name="twitter:description" content="{m.engineering_services_websites_meta_desription()}">
+</svelte:head>
 <header data-animate="true" class="hero text-hero relative">
 	<h1 class="flex items-end p-5 font-menu text-xs text-muted-foreground uppercase">
 		{m.engineering_services_websites_h1()}
@@ -120,7 +130,7 @@
                     <Strapi class="h-fit w-32 text-foreground" />
                 </div>
             </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Headless CMS Solution</span>
         </div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b xl:border-b-0 lg:h-60">
             <a aria-label="Svelte UI Framework" class="card-hover absolute inset-0 z-10" href="https://svelte.dev/" target="_blank" rel="noreferrer noopener">
@@ -128,7 +138,7 @@
                     <Svelte class="h-fit w-36 text-foreground" />
                 </div>
             </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>			
 		</div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l first:border-l-0 border-b md:border-b-0 lg:h-60">
             <a aria-label="Astro Framework" class="card-hover absolute inset-0 z-10" href="https://astro.build/" target="_blank" rel="noreferrer noopener">
@@ -136,7 +146,7 @@
                     <Astro class="h-fit w-32 text-foreground" />
                 </div>
             </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>			
 		</div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
             <a aria-label="bits-UI Headless Svelte Components" class="card-hover absolute inset-0 z-10" href="https://bits-ui.com/" target="_blank" rel="noreferrer noopener">
@@ -144,7 +154,7 @@
                     <Bitsui class="h-fit w-30 text-foreground" />
                 </div>
             </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>			
 		</div>
 		<div class="relative flex h-55 w-full flex-col items-center justify-center overflow-hidden border-l before:left-0 after:right-0 after:rotate-180 first:border-l-0 lg:h-60">
             <a aria-label="TailwindCSS utility-first CSS Framework" class="card-hover absolute inset-0 z-10" href="https://tailwindcss.com/" target="_blank" rel="noreferrer noopener">
@@ -152,7 +162,7 @@
                     <Tailwindcss class="h-fit w-42 text-foreground" />
                 </div>
             </a>
-            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Partner</span>			
+            <span class="text-muted-foreground pointer-events-none absolute bottom-5 left-5 text-sm">Technology Source</span>			
 		</div>
 	</div>
 </section>
