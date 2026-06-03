@@ -99,7 +99,7 @@
 		</h1>
 		<ul class="mt-6 flex flex-wrap gap-6">
 			<li class="flex items-center gap-4">
-				<enhanced:img src="/src/lib/assets/images/manifesto/me_c3labs.png?w=400" alt="Avatar: Jürgen Graf" class="rounded-sm w-7 h-8 object-cover" />
+				<enhanced:img src="/src/lib/assets/images/manifesto/juergen_c3labs@2x.jpg?format=avif" alt="Avatar: Jürgen Graf" class="rounded-sm w-10 h-11 object-cover" />
 				<address class="not-italic">	
 					<div>Jürgen Graf</div>
 					<div class="font-menu text-xs text-muted-foreground">Design Engineer</div>

@@ -256,12 +256,11 @@
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/subway">
 			<div class="relative min-h-75 grow">
 				<enhanced:img
-					src="/src/lib/assets/images/portfolio/subway_hero@2x.png?format=avif"
+					src="/src/lib/assets/images/portfolio/subway_hero@2x.jpg?format=avif"
 					alt="Subway Website Preview"
 					loading="lazy" 
 					decoding="async"
-					class="object-cover object-center"
-					style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+					class="object-cover object-center w-full h-full absolute"
 					sizes="(min-width: 1024px) 66.66667vw, 100vw"
 				/>
 				<div
@@ -283,12 +282,11 @@
 		<a class="card-hover group flex flex-col" target="" rel="" href="/portfolio/werkd">
 			<div class="relative min-h-75 grow">
 				<enhanced:img
-					src="/src/lib/assets/images/portfolio/werk_d@2x.png?format=avif"
+					src="/src/lib/assets/images/portfolio/werkd_ArtBoard1@2x.jpg?format=avif"
 					alt="werk d Website Preview"
 					loading="lazy" 
 					decoding="async"
-					class="object-cover object-center"
-					style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+					class="object-cover object-center w-full h-full absolute"
 					sizes="(min-width: 1024px) 66.66667vw, 100vw"
 				/>
 				<div
