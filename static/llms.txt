@@ -1,0 +1,37 @@
+# c3labs
+
+> Büro für mediale Kommunikation | Aichach – Experten für digitale Erlebnisse und zukunftssichere Webinfrastrukturen mit einer Engineering-First-Methodik.
+
+## Kernbereiche
+
+- [Design](https://c3labs.de/design) - UX/UI-Design und digitale Markenidentitäten, die Nutzer begeistern.
+- [Entwicklung (Engineering)](https://c3labs.de/engineering) - Performante, skalierbare Softwarelösungen, Composable Architecture und Headless CMS.
+- [Websites & Web Apps](https://c3labs.de/engineering/websites-and-webapps) - Ultraschnelle Webanwendungen und E-Commerce-Plattformen ohne Kompromisse.
+- [Service](https://c3labs.de/service) - Zuverlässiger Support, Wartung und erfolgsorientierte Projektbegleitung.
+- [KI Einblicke](https://c3labs.de/ai) - Analysen zur Revolution der KI-Suche (RAG) und der Anpassung von SEO-Strategien.
+
+## Das Manifest (Zukunft des Webs)
+
+Das c3labs-Manifest beleuchtet die Evolution des maschinenlesbaren Webs und die Abkehr von klassischen Webmonolithen.
+
+- [Manifest Hub](https://c3labs.de/manifesto) - Die zentrale Übersicht unserer Ansichten und technologischen Überzeugungen.
+- [Das WordPress-Problem](https://c3labs.de/manifesto/the-wordpress-problem) - Kritische Analyse zu Sicherheitsrisiken, Vibe-Coding und den Defiziten von Altsystemen im Jahr 2026.
+- [llms.txt Guide](https://c3labs.de/manifesto/llms-txt-helping-ai-understand-your-website) - Wie strukturierte Markdown-Dateien großen Sprachmodellen helfen, Webinhalte fehlerfrei zu interpretieren.
+- [Agent Ready Test](https://c3labs.de/manifesto/what-isitagentready-com-actually-measures) - Was das Audit-Tool isitagentready.com von Cloudflare tatsächlich auswertet.
+- [Anleitung Agent Readiness](https://c3labs.de/manifesto/how-to-get-your-website-agent-ready) - Schritt-für-Schritt-Leitfaden, um Websites für autonome KI-Agenten und Transaktionen zu optimieren.
+
+## Eine Übersicht aller Arbeiten
+
+- [Portfolio](https://c3labs.de/portfolio) - Unsere Arbeiten sprechen für sich
+
+## Kontakt und Online-Terminvereinbarung
+
+- [Starten Sie Ihr Projekt](https://c3labs.de/#contact) | Email: [info@c3labs.de](mailto:info@c3labs.de)
+- [Lassen Sie uns über Ihr nächstes Projekt sprechen](https://calcom.c3labs.de/cal3labs) - Vereinbaren Sie einen unverbindlichen Termin. Wir kümmern uns um den Rest.
+
+## Wo findet man c3labs
+
+- [Location](https://maps.app.goo.gl/NgyEEXcEXXQMXedR9) - 48.4610768,11.1152396 c3labs in Google Maps 
+- [Bluesky](https://bsky.app/profile/c3labs.bsky.social) - c3labs auf Bluesky
+- [Linkedin](https://www.linkedin.com/in/c3labs) - c3labs auf Linkedin
+- [Pinterest](https://pinterest.com/c3labs) - c3labs auf Pinterest

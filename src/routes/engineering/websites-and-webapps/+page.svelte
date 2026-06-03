@@ -62,14 +62,14 @@
 	});
 </script>
 <svelte:head>
-	<title>Websites & Web-Apps | c3labs</title>
+	<title>Websites & Web-Apps: High-Performance Engineering | c3labs</title>
 	<meta name="description" content="{m.engineering_services_websites_meta_desription()}">
 
 	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
-	<meta property="og:title" content="Websites & Web-Apps | c3labs">
+	<meta property="og:title" content="Websites & Web-Apps: High-Performance Engineering | c3labs">
 	<meta property="og:description" content="{m.engineering_services_websites_meta_desription()}">
 	<!-- X (Twitter) Cards -->
-    <meta name="twitter:title" content="Websites & Web-Apps | c3labs">
+    <meta name="twitter:title" content="Websites & Web-Apps: High-Performance Engineering | c3labs">
 	<meta name="twitter:description" content="{m.engineering_services_websites_meta_desription()}">
 </svelte:head>
 <header data-animate="true" class="hero text-hero relative">
