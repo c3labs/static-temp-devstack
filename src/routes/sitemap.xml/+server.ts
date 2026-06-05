@@ -59,7 +59,7 @@ export async function GET() {
                 <loc>${website}/manifesto/llms-txt-helping-ai-understand-your-website</loc>
             </url>
             <url>
-                <loc>${website}/manifesto//the-wordpress-problem</loc>
+                <loc>${website}/manifesto/the-wordpress-problem</loc>
             </url>
 		</urlset>`.trim(),
 		{
