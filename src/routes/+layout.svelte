@@ -157,11 +157,11 @@
 		</a>
 		<div class="col-span-2 grid grid-cols-3 md:grid-cols-5 md:p-5 [&amp;_a]:py-1">
 			<div class="col-span-3 grid grid-cols-3">
-				<a target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/c3labs.bsky.social">Bluesky</a>
-				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/c3labs">LinkedIn</a>
-				<a target="_blank" rel="noopener noreferrer" href="https://pinterest.com/c3labs">Pinterest</a>
-				<a href="/about">About</a>
-				<a href="/legal">Legal</a>
+				<a class="p-1 m-0.5" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/c3labs.bsky.social">Bluesky</a>
+				<a class="p-1 m-0.5" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/c3labs">LinkedIn</a>
+				<a class="p-1 m-0.5" target="_blank" rel="noopener noreferrer" href="https://pinterest.com/c3labs">Pinterest</a>
+				<a class="p-1 m-0.5" href="/about">About</a>
+				<a class="p-1 m-0.5" href="/legal">Legal</a>
 				<span class="hidden md:block">(C) 2026</span>
 			</div>
 			<div class="grid col-span-3 grid-cols-3 md:col-span-2 md:grid-cols-2">

@@ -176,11 +176,7 @@
 <section data-animate="true" class="_section-portfolio-cards">
 	<header class="grid-global has-[+_*]:border-b">
 		<h2 class="flex items-end p-5 pt-10 font-menu text-muted-foreground uppercase text-xs">{m.home_portfolio_title()}</h2>
-		<h3 class="title col-span-1 lg:col-start-2 p-5 text-5xl lg:text-6xl lg:pt-50 lg:border-l text-wrap font-foreground tracking-tighter">
-			<span style="position:relative;display:inline-block;">
-				<span class="split" style="position: relative; display: inline;">{m.home_portfolio_headline()}</span>
-			</span>
-		</h3>
+		<h3 class="split title col-span-1 lg:col-start-2 p-5 text-5xl lg:text-6xl lg:pt-50 lg:border-l text-wrap font-foreground tracking-tighter">{m.home_portfolio_headline()}</h3>
 		<a href="{base + '/portfolio'}" class="flex items-end p-5 pt-10 font-menu text-foreground text-xs uppercase card-hover">{m.home_portfolio_viewall()}</a>
 	</header>
 	<div class="grid-global portfolio-grid">
