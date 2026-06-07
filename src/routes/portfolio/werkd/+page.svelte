@@ -54,12 +54,36 @@
 	<div class="flex flex-col border-t p-5 font-menu text-xs uppercase first:border-t-0 md:py-12 lg:border-y-0 lg:border-l">
 		<h3 class="text-muted-foreground mb-4">{m.portfolio_metadata_technologies()}</h3>
 		<ul class="flex flex-col items-start gap-1 text-sm">
-			<li><a class="accent-link-animation" href="/technology/figma">Figma</a></li>
-			<li><a class="accent-link-animation" href="/technology/tailwindcss">TailwindCSS</a></li>
-			<li><a class="accent-link-animation" href="/technology/sveltekit">Sveltekit</a></li>
-			<li><a class="accent-link-animation" href="/technology/cms">CMS primed</a></li>
-			<li><a class="accent-link-animation" href="/technology/coolify">Coolify</a></li>
-			<li><a class="accent-link-animation" href="/technology/github">Github</a></li>
+			<li>
+				<!-- <a class="accent-link-animation" href="/technology/figma"> -->
+					Figma
+				<!-- </a> -->
+			</li>
+			<li>
+				<!-- <a class="accent-link-animation" href="/technology/tailwindcss"> -->
+					TailwindCSS
+				<!-- </a> -->
+			</li>
+			<li>
+				<!-- <a class="accent-link-animation" href="/technology/sveltekit"> -->
+					Sveltekit
+				<!-- </a> -->
+			</li>
+			<li>
+				<!-- <a class="accent-link-animation" href="/technology/cms"> -->
+					CMS primed
+				<!-- </a> -->
+			</li>
+			<li>
+				<!-- <a class="accent-link-animation" href="/technology/coolify"> -->
+					Coolify
+				<!-- </a> -->
+			</li>
+			<li>
+				<!-- <a class="accent-link-animation" href="/technology/github"> -->
+					Github
+				<!-- </a> -->
+			</li>
 		</ul>
 	</div>
 </div>
