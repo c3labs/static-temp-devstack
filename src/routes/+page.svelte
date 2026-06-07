@@ -90,14 +90,14 @@
 </script>
 
 <svelte:head>
-	<title>{m.home_welcome()} | c3labs</title>
+	<title>c3labs | {m.home_weare()}</title>
 	<meta name="description" content="{m.home_meta_description()}">
 
 	<!-- Open Graph for Facebook, LinkedIn, WhatsApp -->
-	<meta property="og:title" content="{m.home_welcome()} | c3labs">
+	<meta property="og:title" content="c3labs | {m.home_weare()}">
 	<meta property="og:description" content="{m.home_meta_description()}">
 	<!-- X (Twitter) Cards -->
-    <meta name="twitter:title" content="{m.home_welcome()} | c3labs">
+    <meta name="twitter:title" content="c3labs | {m.home_weare()}">
 	<meta name="twitter:description" content="{m.home_meta_description()}">
 </svelte:head>
 
