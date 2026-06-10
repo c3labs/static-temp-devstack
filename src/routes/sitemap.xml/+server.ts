@@ -44,7 +44,13 @@ export async function GET() {
                 <loc>${website}/legal</loc>
             </url>
             <url>
-                <loc>${website}/about</loc>
+                <loc>${website}/legal/imprint</loc>
+            </url>
+            <url>
+                <loc>${website}/legal/privacy</loc>
+            </url>
+            <url>
+                <loc>${website}/mission</loc>
             </url>
             <url>
                 <loc>${website}/manifesto</loc>

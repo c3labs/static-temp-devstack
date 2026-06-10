@@ -52,10 +52,9 @@
 			<li>AI Optimzed SEO</li>
 		</ul>
 	</div>
-	<div
-		class="flex flex-col border-t p-5 font-menu text-xs uppercase first:border-t-0 md:py-12 lg:border-y-0 lg:border-l"
-	>
+	<div class="flex flex-col border-t p-5 font-menu text-xs uppercase first:border-t-0 md:py-12 lg:border-y-0 lg:border-l">
 		<h3 class="text-muted-foreground mb-4">{m.portfolio_metadata_technologies()}</h3>
+		<ul class="flex flex-col items-start gap-1 text-sm">
 			<li>
 				<!-- <a class="accent-link-animation" href="/technology/figma"> -->
 					Figma
@@ -86,6 +85,7 @@
 					Github
 				<!-- </a> -->
 			</li>
+		</ul>
 	</div>
 </div>
 <div class="order-1 col-span-3 flex grid-cols-1 flex-col lg:order-2 lg:grid lg:grid-cols-3">

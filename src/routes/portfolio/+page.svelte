@@ -20,11 +20,11 @@
 			autoSplit: true,
 			onSplit(self) {
 				return gsap.from(self.chars, {
-				duration: 0.5, 
+				duration: 1, 
 				// y: 100, 
 				autoAlpha: 0, 
 				stagger: {
-					amount: 1,
+					amount: 0.5,
 					from: "random"
 				},
 				// onComplete: () => self.revert()

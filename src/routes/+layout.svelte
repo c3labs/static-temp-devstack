@@ -150,7 +150,7 @@
 <!-- footer area  -->
 <footer id="footer">
 	<div class="mt-32 grid grid-cols-1 p-5 lg:grid-cols-3 md:p-0 font-menu uppercase text-xs text-muted-foreground">
-		<a target="_blank" rel="noopener noreferrer" class="hidden text-neutral lg:block lg:p-5" href="https://maps.app.goo.gl/NgyEEXcEXXQMXedR9">
+		<a target="_blank" rel="noopener noreferrer" class="hidden text-neutral lg:block lg:p-5 p-1 m-0.5" href="https://maps.app.goo.gl/NgyEEXcEXXQMXedR9">
 			<span class="latitude">48.4610768</span>
 			,<br>
 			<span class="longitude">11.1152396</span>
@@ -160,11 +160,14 @@
 				<a class="p-1 m-0.5" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/c3labs.bsky.social">Bluesky</a>
 				<a class="p-1 m-0.5" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/c3labs">LinkedIn</a>
 				<a class="p-1 m-0.5" target="_blank" rel="noopener noreferrer" href="https://pinterest.com/c3labs">Pinterest</a>
-				<a class="p-1 m-0.5" href="/about">About</a>
-				<a class="p-1 m-0.5" href="/legal">Legal</a>
-				<span class="hidden md:block">(C) 2026</span>
+				<a class="p-1 m-0.5" href="/mission">{m.nav_mission()}</a>
+				<a class="p-1 m-0.5" href="/legal">{m.nav_legal()}</a>
+				<a class="p-1 m-0.5" href="/legal/privacy">{m.nav_privacy()}</a>
+				<a class="p-1 m-0.5" href="/legal/imprint">{m.nav_imprint()}</a>
+				<a class="p-1 m-0.5" href="/llms.txt" target="_blank">llms.txt</a>
+				<span class="hidden md:block p-1 m-0.5">(C) 2026</span>
 			</div>
-			<div class="grid col-span-3 grid-cols-3 md:col-span-2 md:grid-cols-2">
+			<div class="grid col-span-3 grid-cols-3 md:col-span-2 md:grid-cols-2 h-fit w-fit">
 				<div class="inline-flex rounded-full border border-border bg-card p-1 _shadow-sm">
 					{#each locales as l}
 						<button
@@ -178,7 +181,7 @@
 						</button>
 					{/each}
 				</div>
-				<div class="inline-flex rounded-full border border-border bg-card p-1 _shadow-sm" role="group" aria-label="Theme switch">
+				<div class="inline-flex rounded-full border border-border bg-card p-1" role="group" aria-label="Theme switch">
 					<button
 						type="button"
 						class="rounded-full p-2 transition

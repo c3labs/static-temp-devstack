@@ -35,10 +35,10 @@
         });
 
         gsap.from(split.chars, {
-            duration: 0.5,
+            duration: 1,
             autoAlpha: 0,
             stagger: {
-                amount: 1,
+                amount: 0.25,
                 from: "random"
             },
             scrollTrigger: myScrollTrigger,
