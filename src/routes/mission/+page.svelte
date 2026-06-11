@@ -75,7 +75,7 @@
     </h2>
     <div class="flex items-end pt-10 p-5">
         <div class="flex flex-col gap-5">
-            <span class="font-regular">{@html m.mission_about_copy()}</span>
+            <p class="font-regular max-w-4xl">{@html m.mission_about_copy()}</p>
         </div>
     </div>
 </header>
@@ -94,7 +94,7 @@
 <section class="section section-featured-content border-b-0">
     <div></div>
     <div class="col-span-2 lg:border-l p-5 flex flex-col gap-25 lg:gap-50">
-        <p class="text-lg max-w-4xl">{m.mission_who_copy()}</p>
+        <p class="text-lg max-w-4xl text-muted-foreground">{m.mission_who_copy()}</p>
         <!-- <h2 class="title max-w-4xl">Design verstehen wir als System: </h2> -->
     </div>
 </section>
@@ -105,7 +105,7 @@
     <h2 class="split title p-5 text-5xl tracking-tighter text-wrap lg:col-span-2 lg:border-l lg:pt-55 lg:text-6xl">{m.mission_importance_subline()}</h2>
     <div class="max-lg:hidden"></div>
     <div class="lg:border-t lg:border-l p-5">
-        <p class="text-foreground text-xl leading-[1.3]! max-w-lg whitespace-pre-wrap">{@html m.mission_importance_copy_p1()}</p>
+        <p class="text-muted-foreground text-xl leading-[1.3]! max-w-lg whitespace-pre-wrap">{@html m.mission_importance_copy_p1()}</p>
     </div>
     <div class="border-t lg:border-l p-5 flex flex-col gap-16">
         <!-- <img alt="" loading="lazy" width="88" height="51" decoding="async" data-nimg="1" class="h-12.5 w-auto object-contain object-left" srcset="https://cdn.sanity.io/images/zep746qw/production/58ded316d0d11b58b68d62fbca49b5ad7da98747-88x51.svg?w=96&amp;q=75&amp;fit=max&amp;auto=format 1x, https://cdn.sanity.io/images/zep746qw/production/58ded316d0d11b58b68d62fbca49b5ad7da98747-88x51.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format 2x" src="https://cdn.sanity.io/images/zep746qw/production/58ded316d0d11b58b68d62fbca49b5ad7da98747-88x51.svg?w=256&amp;q=75&amp;fit=max&amp;auto=format" style="color: transparent;"> -->

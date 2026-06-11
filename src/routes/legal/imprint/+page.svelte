@@ -70,9 +70,9 @@
 <section data-animate="true" class="section">
 	<div class="grid pt-25 lg:col-span-2 lg:grid-cols-2 lg:pt-0">
     
-		<h3 class="split title p-5 text-wrap lg:col-start-2 lg:-mr-px lg:border-x lg:pt-75 text-5xl tracking-tighter lg:text-6xl">
+		<h1 class="split title p-5 text-wrap lg:col-start-2 lg:-mr-px lg:border-x lg:pt-75 text-5xl tracking-tighter lg:text-6xl">
 			{m.legal_imprint_headline()}
-		</h3>
+		</h1>
 	</div>
 	<nav class="lg:col-span-2 lg:col-start-2 lg:border-l">
 		<ul>
